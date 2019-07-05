@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:number="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/action_bar_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/label_speedx_ota_version_msg_1"
+        android:textColor="@color/text_light_color"
+        android:textSize="@dimen/font_17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:text="@string/label_speedx_ota_version_msg_2"
+        android:textColor="#999"
+        android:textSize="@dimen/font_13" />
+
+    <com.beastbikes.android.ble.ui.painter.PowerView
+        android:id="@+id/speedx_update_version_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="44dp"
+        number:external_progress_color="@color/designcolor_c7" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/speedx_cancel_update"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="35dp"
+            android:background="@drawable/border_1px_solid_white_black_radius_2dp"
+            android:text="@string/label_cancel_upgrade"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_15" />
+    </RelativeLayout>
+
+</LinearLayout>

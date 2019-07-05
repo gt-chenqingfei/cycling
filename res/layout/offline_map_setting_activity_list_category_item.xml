@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/offline_map_setting_activity_list_category_item_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="#efeff4"
+    android:gravity="center_vertical"
+    android:paddingBottom="2dp"
+    android:paddingLeft="13dp"
+    android:paddingTop="2dp"
+    android:textColor="@android:color/black"
+    android:textSize="@dimen/font_14"
+    android:textStyle="bold" />

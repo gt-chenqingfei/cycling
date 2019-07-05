@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_theme_black_color">
+
+    <LinearLayout
+        android:id="@+id/follow_search_list_parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_theme_black_color"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/follow_search_result_activity_no_fans_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="20dp"
+        android:drawableTop="@drawable/ic_friends_search_result_null_icon"
+        android:gravity="center"
+        android:text="@string/friends_search_result_null"
+        android:textColor="#444444"
+        android:textSize="@dimen/font_14"
+        android:visibility="gone" />
+
+</RelativeLayout>

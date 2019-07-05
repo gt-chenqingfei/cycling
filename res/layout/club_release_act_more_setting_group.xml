@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/club_act_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/club_act_black"
+            android:text="@string/club_act_more_setting_str"
+            android:textSize="14sp"/>
+        <ImageView
+            android:id="@+id/club_release_act_more_setting_icon"
+            android:layout_width="13dp"
+            android:layout_height="8dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/club_release_act_more_setting_icon"/>
+    </RelativeLayout>
+</LinearLayout>

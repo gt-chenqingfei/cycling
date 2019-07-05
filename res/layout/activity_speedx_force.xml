@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/action_bar_background"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:subtitle=""
+        app:title="">
+
+        <TextView
+            android:id="@+id/textView_speedx_force_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/ic_arrow_down_white"
+            android:gravity="center"
+            android:text="@string/label_unconnected"
+            android:textColor="@color/club_act_white"
+            android:textSize="@dimen/font_18" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/activity_speedx_force_sync_rela"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#e05757">
+
+        <TextView
+            android:id="@+id/activity_speedx_force_unsync_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_default"
+            android:textSize="@dimen/font_12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/ic_activity_finished_cheat_right" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f3f3f3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="#ffffff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/activity_speedx_force_battery_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.beastbikes.android.ble.ui.widget.BatteryView
+                        android:id="@+id/activity_speedx_force_battery_electricity_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="48dp" />
+
+                    <TextView
+                        android:id="@+id/activity_speedx_force_battery_electricity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/color_activity_speedx_force_black_text"
+                        android:textSize="@dimen/font_15" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/activity_speedx_force_device_logo"
+                    android:layout_width="194dp"
+                    android:layout_height="119dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_speedx_force_bike_normal_logo" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/activity_speedx_force_device_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/color_activity_speedx_force_black_text"
+                    android:textSize="@dimen/font_14" />
+
+                <ImageView
+                    android:id="@+id/activity_speedx_force_device_type_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/activity_speedx_force_device_type"
+                    android:src="@drawable/ic_club_arrow_right" />
+
+            </RelativeLayout>
+
+            <com.beastbikes.android.ble.ui.widget.TextViewWithBoardAndCorners
+                android:id="@+id/activity_speedx_force_connect_to_bike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/ic_speedx_force_connect_icon"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/speed_force_activity_connected"
+                android:textColor="@color/member_list_item_diver"
+                android:textSize="@dimen/font_12"
+                app:drawableColor="@color/member_list_item_diver"
+                app:radius="12dp"
+                app:solidColor="@android:color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="17dp"
+                android:background="#eeeeee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/speedx_force_total_distance"
+                    layout="@layout/speedx_force_data_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <include
+                    android:id="@+id/speedx_force_total_time"
+                    layout="@layout/speedx_force_data_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <include
+                    android:id="@+id/speedx_force_total_count"
+                    layout="@layout/speedx_force_data_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#f3f3f3" />
+
+            <com.beastbikes.android.ble.ui.widget.SpeedForceSettingView
+                android:id="@+id/speedx_force_cycling_history"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:label="@string/profile_fragment_detailed_item_activities" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f3f3f3" />
+
+            <com.beastbikes.android.ble.ui.widget.SpeedForceSettingView
+                android:id="@+id/speedx_force_service_location"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:label="@string/speed_force_after_sell"
+                app:lineVisible="true" />
+
+            <com.beastbikes.android.ble.ui.widget.SpeedForceSettingView
+                android:id="@+id/speedx_force_bikes_settings"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:isEnable="false"
+                app:label="@string/label_bike_setting"
+                app:lineVisible="true" />
+
+            <com.beastbikes.android.ble.ui.widget.SpeedForceSettingView
+                android:id="@+id/speedx_force_ota_version"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:isItemEnable="false"
+                app:label="@string/label_update"
+                app:lineVisible="true" />
+
+            <com.beastbikes.android.ble.ui.widget.SpeedForceSettingView
+                android:id="@+id/speedx_force_gps_version"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:isItemEnable="false"
+                app:label="@string/label_ble_gps_update" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f3f3f3"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+
+                <Button
+                    android:id="@+id/activity_speedx_force_unbind_bike"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/bg_red_btn"
+                    android:text="@string/label_remove_bond"
+                    android:textColor="@color/text_white_color"
+                    android:textSize="@dimen/font_17" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

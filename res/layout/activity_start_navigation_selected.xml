@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@color/navigation_textcolor_white"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="18.5dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/activity_finished_activity_distance_label"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_start_navigation_distance"
+                android:textSize="15sp"
+                android:textColor="@color/discover_color1"
+                android:text="123.2"/>
+            <TextView
+                android:layout_marginLeft="5.1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/discover_color1"
+                android:text="@string/activity_start_navigation_selected_li_facility"
+                android:textSize="8.5sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="13.7dp"
+            android:layout_marginRight="13.7dp"
+            android:layout_width="1dp"
+            android:layout_height="21.8dp"
+            android:background="@color/navigation_textcolor_line"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="18.5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/time"/>
+            <TextView
+                android:layout_marginRight="3.1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/discover_color1"
+                android:text="@string/activity_start_navigation_selected_time_about"
+                android:textSize="8.5sp"/>
+            <TextView
+                android:id="@+id/activity_start_navigation_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/discover_color1"
+                android:text="59"/>
+            <TextView
+                android:layout_marginLeft="3.1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/discover_color1"
+                android:text="@string/activity_start_navigation_selected_time_facility"
+                android:textSize="8.5sp"/>
+        </LinearLayout>
+
+        <com.beastbikes.android.ble.ui.widget.DividerView
+            android:layerType="software"
+            android:layout_marginLeft="44dp"
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            custom:divider_color="@color/navigation_textcolor_line"
+            custom:divider_orientation="divider_vertical"
+            custom:divider_dashLength="5dp"
+            custom:divider_dashGap="2dp"
+            custom:divider_dashThickness="1dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/activity_start_navigation_delete"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ng_delete"
+                android:layout_marginRight="4dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/navigation_textcolor_red"
+                android:text="@string/activity_start_navigation_selected_clean_route"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:id="@+id/activity_start_navigation_start"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="17dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/navigation_textcolor_white"
+        android:text="@string/activity_start_navigation"
+        android:background="@drawable/activity_start_navigation_selected_tvbg"/>
+
+
+</RelativeLayout>

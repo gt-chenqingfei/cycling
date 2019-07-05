@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/item_act_list_user"
+    android:layout_height="56dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <com.beastbikes.framework.ui.android.widget.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"
+            android:id="@+id/item_act_list_user_iv">
+        </com.beastbikes.framework.ui.android.widget.CircleImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:textColor="#f4f4f4"
+            android:id="@+id/item_act_list_user_tv"
+            android:textSize="@dimen/font_17"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#292929"/>
+</LinearLayout>

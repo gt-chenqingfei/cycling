@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="98dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_filter_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/activity_watermark_gallery_lv_item_filter_img"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:contentDescription="@string/empty"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tutorial_page_1" />
+
+    <TextView
+        android:id="@+id/activity_watermark_gallery_lv_item_filter_name"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="@string/activity_watermark_tab_filter"
+        android:background="#1a1a1a"
+        android:textColor="#7e7e7e"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:focusable="true"
+        android:textSize="@dimen/font_12" />
+
+</LinearLayout>

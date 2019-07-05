@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/rank_list_item_layout"
+
+    android:minHeight="60dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ranking_fragment_list_item_ordinal"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0"
+            android:contentDescription="@string/empty"
+            android:gravity="center"
+            android:textColor="#242424"
+            android:textSize="@dimen/font_14" />
+
+        <com.beastbikes.framework.ui.android.widget.CircleImageView
+            android:id="@+id/ranking_fragment_list_item_avatar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:contentDescription="@string/empty"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_avatar"
+            app:borderColor="@android:color/white"
+            app:borderWidth="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ranking_fragment_list_item_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="#242424"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/ranking_fragment_list_item_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/red_btn_bg"
+                    android:gravity="left"
+                    android:text="@string/club_info_manager"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/font_11"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ranking_fragment_list_item_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#A1A1A1"
+                    android:textSize="@dimen/font_10"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/ranking_fragment_list_item_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:textColor="#A1A1A1"
+                    android:textSize="@dimen/font_10" />
+
+                <TextView
+                    android:id="@+id/ranking_fragment_list_item_district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="#A1A1A1"
+                    android:textSize="@dimen/font_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/ranking_framgent_list_item_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ranking_fragment_list_item_distance"
+            android:layout_alignParentRight="true"
+            android:text="@string/activity_param_label_distance_unit"
+            android:textColor="#242424"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/ranking_fragment_list_item_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/ranking_framgent_list_item_km"
+            android:textColor="#070707"
+            android:textSize="@dimen/font_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="#E0E0E0" />
+
+</RelativeLayout>

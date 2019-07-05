@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    android:orientation="vertical">
+
+    <com.beastbikes.android.modules.cycling.club.ui.widget.MyViewPager
+        android:id="@+id/sticky_list_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+
+    <com.beastbikes.android.widget.CircleIndicator
+        android:id="@id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+
+        app:ci_animator="@animator/indicator_animator"
+        app:ci_animator_reverse="@animator/indicator_animator_reverse"
+        app:ci_drawable="@drawable/white_radius_square"
+        app:ci_drawable_unselected="@drawable/white_radius"
+        app:ci_height="6dp"
+        app:ci_margin="6dp"
+        app:ci_selected_height="6dp"
+        app:ci_selected_width="18dp"
+        app:ci_width="6dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/cycling_completed_bottom_tip"
+        android:textColor="#999999"
+        android:textSize="11sp" />
+</LinearLayout>

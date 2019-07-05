@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:scrollbars="none"
+        android:layout_weight="1"
+        android:background="@color/activity_create_club_act_info_bg">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageButton
+                android:id="@+id/action_insert_image"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/rich_insert_image" />
+
+            <ImageButton
+                android:id="@+id/action_bold"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/not_rich_bold"
+                />
+
+            <ImageButton
+                android:id="@+id/action_italic"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/not_rich_italic"
+                />
+
+            <ImageButton
+                android:id="@+id/action_underline"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/not_rich_underline"
+                />
+
+            <ImageButton
+                android:id="@+id/action_textcolor"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/rich_textcolor"
+                />
+
+            <ImageButton
+                android:id="@+id/action_align_left"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/rich_justify_left"
+                />
+
+            <ImageButton
+                android:id="@+id/action_align_center"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/rich_justify_center"
+                />
+
+            <ImageButton
+                android:id="@+id/action_align_right"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/rich_justify_right"
+                />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/activity_create_club_act_info_commit"
+        android:background="#fff"
+        android:layout_width="60dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/designcolor_c7"
+        android:text="@string/activity_state_label_finish"/>
+</LinearLayout>

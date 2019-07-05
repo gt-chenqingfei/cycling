@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:id="@+id/tab_item">
+
+    <ImageView
+        android:id="@+id/tab_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/tab_cycling_selector" />
+
+    <TextView
+        android:id="@+id/tab_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab_item_icon"
+        android:layout_centerHorizontal="true"
+        android:text="骑行"
+        android:textColor="@color/tab_item_selector"
+        android:textSize="@dimen/font_10" />
+
+    <TextView
+        android:id="@+id/tab_item_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tab_item_icon"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/bg_oval"
+        android:text=""
+        android:textColor="@color/bg_white_color"
+        android:textSize="@dimen/font_10"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global -->
+    <color name="text_default">#ffffff</color>
+    <color name="text_selected">#d60909</color>
+    <color name="action_bar_background">#141414</color>
+    <color name="window_background">#111111</color>
+
+    <!-- Authentication Activity -->
+    <color name="authentication_activity_copyright">#6e6e6e</color>
+
+    <!-- Home Activity -->
+    <color name="home_activity_tab_bar_item_label_default">#999999</color>
+
+    <!-- Activity Fragment -->
+    <color name="activity_fragment_tab_bar_background">#66000000</color>
+    <color name="activity_fragment_tab_bar_item_label_default">#999999</color>
+    <color name="activity_fragment_tab_bar_item_label_selected">#cccccc</color>
+
+    <!-- Image Cut -->
+    <color name="activity_user_setting_img_cut">#99FFFFFF</color>
+
+    <!-- ordinal -->
+    <color name="ranking_fragment_ordinal_default">#ffffff</color>
+    <color name="ranking_fragment_ordinal_other">#242424</color>
+
+    <!-- Activity Finished -->
+    <color name="activity_finished_activity_bg">#3d3e40</color>
+    <color name="activity_finished_detail_activity_name_text_color">#666666</color>
+
+    <!-- Activity Feedback -->
+    <color name="feedback_activity_timestamp_gray">#888</color>
+    <color name="feedback_activity_back_background">#333333</color>
+    <color name="feedback_activity_text_gray">#898989</color>
+    <color name="feedback_activity_input_wrap_background">#f8f8f8</color>
+
+    <!-- Route Activity -->
+    <color name="route_activity_want_go">#777</color>
+    <color name="route_activity_wanted_go">#e65c5c</color>
+
+    <!-- About Activity -->
+    <color name="about_activity_divider">#c8c7cc</color>
+
+    <!-- Route Self Activity -->
+    <color name="route_self_use">#ff6044</color>
+    <color name="route_self_used">#999</color>
+
+    <!-- Route Map Text Color -->
+    <color name="route_map_start_color">#7ED321</color>
+
+    <color name="universal_rank_item_color_1">#fff</color>
+    <color name="universal_rank_item_color_2">#f8f8f8</color>
+
+    <!-- whellview -->
+    <color name="wheelviewsave">#D84143</color>
+    <color name="wheel_view_cancel">#999</color>
+    <color name="wheel_view_line_color">#dbdbdb</color>
+
+    <!-- activity complete activity -->
+    <color name="activity_complete_activity_report_desc_color">#888</color>
+
+    <color name="discover_color1">#333333</color>
+    <color name="discover_color2">#282828</color>
+    <color name="discover_color3">#222222</color>
+
+    <color name="club_rank_tab_bg_color">#353535</color>
+    <color name="club_rank_listview_diver_color">#666666</color>
+
+    <color name="club_rank_title_bg">#070707</color>
+    <color name="member_manager_item_nickname">#b5b5ad</color>
+    <color name="member_manager_item_time">#555555</color>
+    <color name="member_managet_label">#b5b5b5</color>
+
+    <color name="member_delete_btn">#e83a30</color>
+    <color name="member_manager_listview_divider">#979797</color>
+    <color name="member_list_item_color">#cc6f6f6f</color>
+    <color name="member_list_item_diver">#444444</color>
+
+    <color name="clubinfosetting_label_color">#f3f4f6</color>
+    <color name="clubinfosetting_label_color2">#ccf3f4f6</color>
+    <color name="selectlocation_icon_text">#d22001</color>
+    <color name="squad_color2">#ea3232</color>
+    <color name="thumb_text_color">#e5ffffff</color>
+    <color name="thumb_view_color">#33666666</color>
+    <color name="club_msg_pinkishGrey">#bdbdbd</color>
+    <color name="activity_create_club_act_info_bg">#f8f8f8</color>
+    <color name="club_act_map_img_src_layer">#80000000</color>
+
+    <color name="account_management_color">#d42323</color>
+
+    <integer-array name="pocket_background_colors">
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_4</item>
+    </integer-array>
+
+    <color name="pocket_color_1">#85edb9</color>
+    <color name="pocket_color_2">#34bdb7</color>
+    <color name="pocket_color_3">#ee4458</color>
+    <color name="pocket_color_4">#fcb74d</color>
+    <color name="club_feed_info_add">#cc090909</color>
+    <color name="text_number_color">#ffffff</color>
+    <color name="club_act_bg">#f6f6f6</color>
+    <color name="club_act_white">#fff</color>
+    <color name="club_act_black">#000</color>
+
+    <!--CountryPage-->
+    <color name="smssdk_white">#ffffffff</color>
+
+    <!-- Design Color -->
+    <color name="tablayoutIndicatorColor">#ff3b3b</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="item_rank_distancetv">#f2f2f2</color>
+
+    <color name="navigation_tvgbg">#dedede</color>
+    <color name="navigation_textcolor">#919191</color>
+    <color name="navigation_textcolor_white">#fff</color>
+    <color name="navigation_textcolor_line">#979797</color>
+    <color name="navigation_textcolor_red">#d62424</color>
+    <color name="navigation_textcolor_blue">#037aff</color>
+
+    <!-- 统一颜色 -->
+    <color name="splitlinecolor">#292929</color>
+
+
+    <color name="text_white_color">#F4F4F4</color>
+    <color name="bg_black_color">#111111</color>
+    <color name="bg_theme_black_color">#222222</color>
+    <color name="bg_border_line_color">#292929</color>
+    <color name="bg_border_line_color_trans">#4cffffff</color>
+    <color name="text_black_color">#909090</color>
+    <color name="red_color">#FF3B3B</color>
+    <color name="text_light_color">#dddddd</color>
+    <color name="gray">#ff888888</color>
+    <color name="common_bg_color">#1f1f1f</color>
+    <color name="designcolor_c7">#d62424</color>
+    <color name="warmGrey">#33979797</color>
+
+    <color name="black">#000000</color>
+    <color name="warmGreyTwo">#777777</color>
+
+    <!-- BLE -->
+    <color name="rippelColor">#0099CC</color>
+    <color name="color_unsync">#D62424</color>
+    <color name="color_synced">#939393</color>
+    <color name="color_syncing">#4A90E2</color>
+    <color name="bg_white_color">#ffffff</color>
+    <color name="blackSix">#1f1f1f</color>
+    <color name="club_act_manage_bg">#f1f1f1</color>
+    <color name="club_act_manager_dialog_view_bg">#d8d8d8</color>
+    <color name="dodgerBlue">#4286f5</color>
+    <color name="dodgerOrange">#fa6d0f</color>
+    <color name="view_color_circle_black">#010101</color>
+    <color name="view_color_circle_violet">#ac56c3</color>
+    <color name="view_color_circle_blue">#0f68c4</color>
+    <color name="view_color_circle_green">#7fbd00</color>
+    <color name="view_color_circle_orange">#ff6313</color>
+    <color name="view_color_circle_red">#f13443</color>
+    <color name="whiteTwo">#f4f4f4</color>
+    <color name="item_competition_section_diver">#2c2c2c</color>
+    <color name="frag_section_list_no_content_tv">#626262</color>
+    <color name="blackFive">#181818</color>
+    <color name="pinkishGrey">#bbbbbb</color>
+    <color name="warmGrey2">#9a9a9a</color>
+    <color name="whiteThree">#eeeeee</color>
+    <color name="bike_shop_detail_black">#3a3a3a</color>
+    <color name="bike_shop_detail_div_view">#f0f0f0</color>
+    <color name="location_title_success_color">#21d38d</color>
+    <color name="color_686868">#686868</color>
+    <color name="color_activity_speedx_force_black_text">#212121</color>
+
+    <!-- zxing -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <!--v2.5.0-->
+    <color name="color_medal_push_dialog_bottom_red">#d62424</color>
+
+</resources>

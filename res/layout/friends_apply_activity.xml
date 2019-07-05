@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color">
+
+    <TextView
+        android:id="@+id/friend_apply_activity_none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="126dp"
+        android:drawablePadding="18dp"
+        android:drawableTop="@drawable/ic_friends_null"
+        android:gravity="center"
+        android:text="@string/friends_apply_result_null"
+        android:textColor="#acacac"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.beastbikes.android.widget.PullRefreshListView
+            android:id="@+id/friends_apply_activity_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/listview_divider_line_margin_left"
+            android:dividerHeight="1px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bg_border_line_color" />
+    </LinearLayout>
+
+</FrameLayout>

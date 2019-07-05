@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/follow_banner_item_1"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/follow_banner_item_img_1"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:src="@drawable/ic_follow_contact_icon" />
+
+        <TextView
+            android:id="@+id/follow_banner_item_label_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="通讯录"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_11" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/follow_banner_item_2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/follow_banner_item_img_2"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:src="@drawable/ic_follow_contact_icon" />
+
+        <TextView
+            android:id="@+id/follow_banner_item_label_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="通讯录"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_11" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/follow_banner_item_3"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/follow_banner_item_img_3"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:src="@drawable/ic_follow_contact_icon" />
+
+        <TextView
+            android:id="@+id/follow_banner_item_label_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="通讯录"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_11" />
+    </LinearLayout>
+
+</LinearLayout>

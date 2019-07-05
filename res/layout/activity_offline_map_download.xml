@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:search="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#f3f3f3">
+
+    <!-- 下载列表 -->
+
+    <ListView
+        android:id="@+id/offlinemap_fragment_download_lvDown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0px" />
+
+    <TextView
+        android:id="@+id/offlinemap_fragment_download_no_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="29dp"
+        android:drawableTop="@drawable/ic_offline_map_no_download"
+        android:gravity="center"
+        android:text="@string/offline_map_setting_activity_undownload"
+        android:textColor="#646464"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</FrameLayout>

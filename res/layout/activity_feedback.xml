@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f4f4f4"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white_color"
+            android:gravity="center"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/tab_app_error"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/feedback_app_error"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tab_product_suggest"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="70dp"
+                android:gravity="center"
+                android:text="@string/feedback_product_suggest"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#aa979797" />
+
+
+        <LinearLayout
+            android:id="@+id/feedback_issue_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_feedback_issue_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:drawableRight="@drawable/ic_shop_detail_desc_icon_unfold"
+                android:text="@string/feedback_issue_type"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dp"
+                android:background="#aa979797" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feedback_suggest_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white_color"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/feedback_suggest_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white_color"
+                android:gravity="left"
+                android:hint="@string/feedback_suggest_hint"
+                android:minHeight="80dp"
+                android:textColor="#000"
+                android:textColorHint="#999999"
+                android:textSize="15sp"
+                android:maxLength="300"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:gravity="right"
+                android:text="300"
+                android:textColor="#999999" />
+
+            <ImageView
+                android:id="@+id/feedback_iv_picture"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_image_select" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feedback_upload_log_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white_color"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="20dp"
+                android:background="#aa979797" />
+
+            <CheckBox
+                android:id="@+id/feedback_upload_log_cb"
+                style="@style/Checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/feedback_uploade_log"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/feedback_uploade_log_tip"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feedback_contact_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:text="@string/feedback_contact" />
+
+            <EditText
+                android:id="@+id/feedback_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white_color"
+                android:gravity="center_vertical"
+                android:hint="@string/feedback_contact_hint"
+                android:minHeight="60dp"
+                android:paddingLeft="15dp"
+
+                android:textColorHint="#999999"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

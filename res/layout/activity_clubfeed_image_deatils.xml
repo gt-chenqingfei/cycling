@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_clubfeed_image_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/club_feed_image_desc_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#6f000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/club_feed_image_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="left"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_12" />
+
+        <RelativeLayout
+            android:id="@+id/club_feed_image_user_view"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <com.beastbikes.framework.ui.android.widget.CircleImageView
+                android:id="@+id/club_feed_image_avatar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/ic_avatar" />
+
+            <TextView
+                android:id="@+id/club_feed_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/club_feed_image_avatar"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:id="@+id/club_feed_image_commend_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:drawableLeft="@drawable/ic_common"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:text="12"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/club_feed_image_commend_count"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/club_feed_image_praise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="4dp"
+                    android:layout_toLeftOf="@+id/comment"
+                    android:background="@drawable/transparent"
+                    android:src="@drawable/selector_clubfeed_praise_bg" />
+
+                <TextView
+                    android:id="@+id/club_feed_image_praise_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="23"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/font_12" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

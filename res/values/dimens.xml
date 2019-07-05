@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="font_5">5sp</dimen>
+    <dimen name="font_9">9sp</dimen>
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="font_11">11sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_13">13sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_15">15sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_17">17sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_22">22sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+    <dimen name="font_26">26sp</dimen>
+    <dimen name="font_28">28sp</dimen>
+    <dimen name="font_30">30sp</dimen>
+    <dimen name="font_34">34sp</dimen>
+    <dimen name="font_40">40sp</dimen>
+    <dimen name="font_42">42sp</dimen>
+    <dimen name="font_68">68sp</dimen>
+    <dimen name="font_50">50sp</dimen>
+    <dimen name="action_tab_current_height">3sp</dimen>
+    <dimen name="authentication_sign_in_fragment_button_margin">12dp</dimen>
+    <dimen name="authentication_switch_sign_up_margin_top">20dp</dimen>
+    <dimen name="authentication_switch_sign_up_margin_left">40dp</dimen>
+    <dimen name="authentication_logo_margin">32dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="avatar_m">50dip</dimen>
+    <dimen name="avatar">36dp</dimen>
+    <dimen name="avatar_like">24dp</dimen>
+    <dimen name="avatar_margin">5dp</dimen>
+    <dimen name="cycling_number_text_view">65sp</dimen>
+    <dimen name="clubfeed_comment_et_height">45dp</dimen>
+    <dimen name="grid_explore_avatar_width">80dp</dimen>
+    <dimen name="margin_3dp">3dp</dimen>
+
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="drawer_icon_size">24dp</dimen>
+    <dimen name="drawer_separator_vertical_margin">8dp</dimen>
+    <dimen name="narrow_space">6dp</dimen>
+    <dimen name="wide_space">16dp</dimen>
+    <dimen name="large_text_size">30dp</dimen>
+    <dimen name="avatar_dimen">60dp</dimen>
+    <dimen name="avatar_layout_margin">10dp</dimen>
+    <dimen name="divider_height">10dp</dimen>
+    <dimen name="chat_padding_bottom">5dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="font_19">19sp</dimen>
+    <dimen name="cycling_fragment_btn_width">50dp</dimen>
+    <dimen name="cycling_fragment_start_btn_width">80dp</dimen>
+    <dimen name="cycling_fragment_margin_bottom">30dp</dimen>
+    <dimen name="font_65">65sp</dimen>
+    <dimen name="font_55">55sp</dimen>
+    <dimen name="font_46">46sp</dimen>
+    <dimen name="font_80">80sp</dimen>
+    <dimen name="font_25">25sp</dimen>
+
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+    <!-- RadioButton Default -->
+    <dimen name="radio_width">28dp</dimen>
+    <dimen name="radio_height">28dp</dimen>
+    <dimen name="radio_border_radius">6dp</dimen>
+    <dimen name="radio_thumb_radius">3dp</dimen>
+    <dimen name="radio_ripple_radius">16dp</dimen>
+    <dimen name="radio_stroke_width">2dp</dimen>
+    <color name="radio_color">#6d6d6d</color>
+    <color name="radio_checked_color">@color/designcolor_c7</color>
+
+    <!-- multi_image_selector -->
+    <dimen name="image_size">120dp</dimen>
+    <dimen name="space_size">2dp</dimen>
+    <dimen name="folder_cover_size">72dp</dimen>
+
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_7">7dp</dimen>
+    <dimen name="font_activity_cycling_speed_size">120sp</dimen>
+</resources>

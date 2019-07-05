@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_watermark_surfaceView_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_watermark_bar">
+
+        <com.beastbikes.android.modules.user.filter.other.SquareCameraPreview
+            android:id="@+id/activity_watermark_surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.beastbikes.android.modules.user.filter.other.SaveImageView
+            android:id="@+id/activity_watermark_captureView"
+            android:layout_width="match_parent"
+            android:contentDescription="@string/empty"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" />
+
+        <View
+            android:id="@+id/activity_watermark_cover_top_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignTop="@id/activity_watermark_surfaceView"
+            android:background="@android:color/holo_green_dark" />
+
+        <View
+            android:id="@+id/activity_watermark_cover_bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@id/activity_watermark_surfaceView"
+            android:background="@android:color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_watermark_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:id="@+id/activity_watermark_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/ic_activity_watermark_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_watermark_camera_tools"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#7f000000"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/activity_watermark_switch_camera"
+            android:layout_width="50dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="69dp"
+            android:contentDescription="@string/empty"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_activity_watermark_switch_camera" />
+
+        <ImageView
+            android:id="@+id/activity_watermark_switch_flash"
+            android:layout_width="50dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="69dp"
+            android:contentDescription="@string/empty"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_activity_watermark_switch_flash_auto" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_watermark_camera_tools"
+        android:background="#000000">
+
+        <ImageView
+            android:id="@+id/activity_watermark_capture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/ic_activity_watermark_capture" />
+
+        <ImageView
+            android:id="@+id/activity_watermark_gallery"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_activity_watermark_no_image" />
+    </RelativeLayout>
+
+</RelativeLayout>

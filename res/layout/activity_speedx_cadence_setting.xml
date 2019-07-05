@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/action_bar_background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <com.beastbikes.android.ble.ui.widget.ShapeIndicatorView
+            android:id="@+id/activity_speddx_cadence_setting_tab_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            app:fullColor="@color/red_color" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/activity_speedx_cadence_setting_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:tabBackground="@color/bg_black_color"
+            app:tabContentStart="0dp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/red_color"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/text_white_color"
+            app:tabTextColor="@color/text_white_color" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="42dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/bg_cadence_tab_left" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="42dp"
+            android:layout_gravity="top|right"
+            android:background="@drawable/bg_cadence_tab_right" />
+
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_speedx_cadence_setting_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/activity_speedx_cadence_setting_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="0"
+        android:background="@drawable/selector_btn_red_to_grep_bg"
+        android:text="@string/select"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/font_15" />
+
+</LinearLayout>

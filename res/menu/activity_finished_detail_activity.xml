@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:holo="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/activity_record_detail_activity_action_button_finished"
+        holo:showAsAction="always"
+        android:title="@string/activity_record_detail_activity_finish" />
+
+</menu>

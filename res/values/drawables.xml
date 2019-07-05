@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="gray">#f0f0f0</drawable>
+    <drawable name="bg_222222">#222222</drawable>
+    <drawable name="bg_1b1b1b">#1b1b1b</drawable>
+    <drawable name="bg_303030">#202020</drawable>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="2dp"
+        card_view:cardMaxElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="65dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cadence_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R1"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/font_30"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cadence_item_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="(60-70 RPM)"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/font_15" />
+
+                <ImageView
+                    android:id="@+id/cadence_item_select_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_check_post_on" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cadence_item_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:text="R1是指刚接触骑行或者骑行经验不丰富的用户，需要适应性训练打好基础，将踏频设定为61~70，略高于普通用户的骑行踏频，减少了提升难度，同时为未来提升能力做好准备。"
+                android:textColor="#555555"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

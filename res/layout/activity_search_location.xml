@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/navigation_textcolor_white"
+    tools:context="com.beastbikes.android.ble.ui.widget.SearchLocationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="@color/navigation_tvgbg">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/activity_search_location_selected_tvbg">
+            <EditText
+                android:id="@+id/activity_seach_loction_et"
+                android:layout_width="290.3dp"
+                android:layout_height="29.9dp"
+                android:drawableLeft="@drawable/ic_search_default"
+                android:drawableRight="@drawable/ic_auth_cencel"
+                android:inputType="text"
+                android:textSize="13sp"
+                android:background="@null"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:id="@+id/activity_seach_loction_finsh"
+            android:textColor="@color/navigation_textcolor_blue"
+            android:textSize="13sp"
+            android:text="@string/cancel"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_seach_loction_rv">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_fragment_message_menu"
+    android:layout_width="56dp"
+    android:layout_height="56dp">
+
+    <ImageView
+        android:id="@+id/profile_fragment_menu_message_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/empty"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_profile_message_icon" />
+
+    <TextView
+        android:id="@+id/profile_fragment_menu_message_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_oval"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="@dimen/font_10"
+        android:visibility="gone"/>
+
+</FrameLayout>

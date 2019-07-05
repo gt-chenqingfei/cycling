@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/common_bg_color" />
+
+        <LinearLayout
+            android:id="@+id/setting_fragment_item_user"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:background="@color/window_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.beastbikes.framework.ui.android.widget.CircleImageView
+                android:id="@+id/setting_fragment_item_user_avatar"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_avatar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/setting_fragment_user_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/font_20" />
+
+                <TextView
+                    android:id="@+id/setting_fragment_user_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#aaaaaa"
+                    android:textSize="@dimen/font_13" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_arrow_right_icon" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/common_bg_color" />
+
+        <LinearLayout
+            android:id="@+id/setting_group_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/window_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/settings_goal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/ic_setting_target_set"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/ic_arrow_right_icon"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+                android:text="@string/label_goal_settings"
+                android:textColor="@color/text_white_color"
+                android:textSize="@dimen/font_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="55dp"
+                android:background="#292929" />
+
+
+            <TextView
+                android:id="@+id/stopwatchsettings"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/ic_setting_cycling_set"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/ic_arrow_right_icon"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+                android:text="@string/cycling_setting"
+                android:textColor="@color/text_white_color"
+                android:textSize="@dimen/font_14" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/common_bg_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/window_background"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/setting_fragment_item_voice_banding"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_setting_vcard"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/ic_arrow_right_icon"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+                android:text="@string/setting_fragment_item_voice_accountband"
+                android:textColor="@color/text_white_color"
+                android:textSize="@dimen/font_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="35dp"
+                android:background="#292929" />
+
+            <TextView
+                android:id="@+id/setting_fragment_item_service_contact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_setting_service_contact"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/ic_arrow_right_icon"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+                android:text="@string/setting_fragment_item_service_contact"
+                android:textColor="@color/text_white_color"
+                android:textSize="@dimen/font_14"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="35dp"
+                android:background="#292929" />
+
+
+            <LinearLayout
+                android:id="@+id/setting_fragment_laboratory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_setting_lab"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/ic_arrow_right_icon"
+                    android:gravity="center_vertical"
+                    android:text="@string/speedx_laboratory"
+                    android:textColor="@color/text_white_color"
+                    android:textSize="@dimen/font_14" />
+
+                <com.beastbikes.android.widget.materialdesign.mdswitch.Switch
+                    android:id="@+id/setting_fragment_item_laboratory"
+                    style="@style/material_design_switch_style"
+                    android:layout_marginRight="24dp"
+                    android:checked="false"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="35dp"
+                android:background="#292929" />
+
+            <TextView
+                android:id="@+id/setting_fragment_item_offline_map"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_setting_offline_map"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/ic_arrow_right_icon"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+                android:text="@string/setting_fragment_item_offline_map"
+                android:textColor="@color/text_white_color"
+                android:textSize="@dimen/font_14"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/common_bg_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/window_background"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+
+            <TextView
+                android:id="@+id/setting_fragment_item_clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_setting_clean_cache"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/ic_arrow_right_icon"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+                android:text="@string/setting_fragment_item_clear_cache"
+                android:textColor="@color/text_white_color"
+                android:textSize="@dimen/font_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="35dp"
+                android:background="#292929" />
+
+
+            <TextView
+                android:id="@+id/setting_fragment_item_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_setting_fadeback"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/ic_arrow_right_icon"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+                android:text="@string/setting_fragment_item_feedback"
+                android:textColor="@color/text_white_color"
+                android:textSize="@dimen/font_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="35dp"
+                android:background="#292929" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/setting_fragment_item_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/ic_setting_about"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/ic_arrow_right_icon"
+                    android:gravity="center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="@string/setting_fragment_item_about"
+                    android:textColor="@color/text_white_color"
+                    android:textSize="@dimen/font_14" />
+
+                <ImageView
+                    android:id="@+id/setting_fragment_item_about_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/dot_red_bg"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#292929" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/common_bg_color" />
+
+        <TextView
+            android:id="@+id/setting_fragment_item_quit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/window_background"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:text="@string/user_setting_activity_button_exit"
+            android:textColor="@color/designcolor_c7"
+            android:textSize="@dimen/font_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_us"
+                android:textColor="@color/warmGreyTwo"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/setting_fragment_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:text="@string/contact_us_email_address"
+                android:textColor="@color/warmGreyTwo"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

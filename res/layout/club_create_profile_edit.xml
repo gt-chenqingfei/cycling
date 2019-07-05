@@ -1,0 +1,446 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fffffe"
+    android:isScrollContainer="false">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="110dp">
+
+            <LinearLayout
+                android:id="@+id/club_create_profile_edit_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/club_create_head_lay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="16dp"
+                    android:paddingRight="14.8dp"
+                    android:paddingTop="13dp">
+
+                    <TextView
+                        android:id="@+id/club_create_head_tv"
+                        style="@style/club_profile_text_style"
+                        android:text="@string/club_logo" />
+
+                    <com.beastbikes.framework.ui.android.widget.CircleImageView
+                        android:id="@+id/club_create_head_civ"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="12.5dp"
+                        android:contentDescription="@string/empty"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_avatar_club" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:contentDescription="@string/empty"
+                        android:src="@drawable/ic_club_arrow_right" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#e5e5e5" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/club_create_name_tv"
+                        style="@style/club_profile_text_style"
+                        android:layout_centerVertical="true"
+                        android:text="@string/club_name" />
+
+                    <EditText
+                        android:id="@+id/club_create_name_et"
+                        style="@style/club_profile_edit_text_style"
+                        android:layout_toRightOf="@+id/club_create_name_tv"
+                        android:hint="@string/club_name_hint"
+                        android:maxLength="12" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#e5e5e5" />
+
+                <FrameLayout
+                    android:id="@+id/club_create_city_lay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="15dp"
+                    android:paddingRight="14.8dp">
+
+                    <TextView
+                        android:id="@+id/club_create_city_tv"
+                        style="@style/club_profile_text_style"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/club_city" />
+
+                    <TextView
+                        android:id="@+id/club_create_city_content_tv"
+                        style="@style/club_profile_edit_text_style"
+                        android:layout_gravity="right|center_vertical"
+                        android:paddingRight="7dp"
+                        android:hint="@string/select_from_map" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:contentDescription="@string/empty"
+                            android:src="@drawable/ic_club_arrow_right" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#e5e5e5" />
+
+                <RelativeLayout
+                    android:id="@+id/club_create_intro_lay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/club_create_intro_tv"
+                        style="@style/club_profile_text_style"
+                        android:layout_centerVertical="true"
+                        android:text="@string/club_intro" />
+
+                    <EditText
+                        android:id="@+id/club_create_intro_et"
+                        style="@style/club_profile_edit_text_style"
+                        android:layout_toRightOf="@+id/club_create_intro_tv"
+                        android:hint="@string/club_intro_hint"
+                        android:maxLength="16" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#e5e5e5" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/club_create_realname_tv"
+                        style="@style/club_profile_text_style"
+                        android:layout_centerVertical="true"
+                        android:text="@string/club_realname" />
+
+                    <EditText
+                        android:id="@+id/club_create_realname_et"
+                        style="@style/club_profile_edit_text_style"
+                        android:layout_toRightOf="@+id/club_create_realname_tv"
+                        android:hint="@string/club_realname_hint"
+                        android:maxLength="12" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:background="#e5e5e5" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/club_create_phone_tv"
+                        style="@style/club_profile_text_style"
+                        android:layout_centerVertical="true"
+                        android:text="@string/club_phone" />
+
+                    <TextView
+                        android:id="@+id/club_create_zone_tv"
+                        android:layout_toRightOf="@+id/club_create_phone_tv"
+                        style="@style/club_profile_text_style"
+                        android:layout_centerVertical="true"
+                        android:text="+86"
+                        android:layout_marginLeft="15dp"
+                       />
+
+                    <View
+                        android:id="@+id/club_create_divider"
+                        android:layout_toRightOf="@+id/club_create_zone_tv"
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#cc222222"
+                        />
+
+                    <EditText
+                        android:id="@+id/club_create_phone_et"
+                        style="@style/club_profile_edit_text_style"
+                        android:layout_toRightOf="@+id/club_create_divider"
+                        android:digits="@string/club_phone_digits"
+                        android:hint="@string/club_phone_hint"
+                        android:inputType="number"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#e5e5e5" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/club_create_verificationcode_tv"
+                        style="@style/club_profile_text_style"
+                        android:layout_centerVertical="true"
+                        android:text="@string/vCode" />
+
+                    <EditText
+                        android:id="@+id/club_create_vcode_et"
+                        style="@style/club_profile_edit_text_style"
+                        android:layout_toLeftOf="@+id/club_create_verificationcode_btn"
+                        android:hint="@string/vcode_hint"
+                        android:inputType="number"
+                        android:maxLength="6" />
+
+                    <Button
+                        android:id="@+id/club_create_verificationcode_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="14.5dp"
+                        android:background="@drawable/bg_verificationcodebtn"
+                        android:gravity="center"
+                        android:minWidth="75dp"
+                        android:text="@string/get_verification_code"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#e5e5e5" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/club_create_qq_tv"
+                        style="@style/club_profile_text_style"
+                        android:layout_centerVertical="true"
+                        android:text="@string/club_qq" />
+
+                    <EditText
+                        android:id="@+id/club_create_qq_et"
+                        style="@style/club_profile_edit_text_style"
+                        android:layout_toRightOf="@+id/club_create_qq_tv"
+                        android:hint="@string/club_qq_hint"
+                        android:inputType="number"
+                        android:maxLength="12" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#e5e5e5" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/club_create_identity_number_tv"
+                        style="@style/club_profile_text_style"
+                        android:layout_centerVertical="true"
+                        android:text="@string/club_identity" />
+
+                    <EditText
+                        android:id="@+id/club_create_identity_number_et"
+                        style="@style/club_profile_edit_text_style"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/club_create_identity_number_tv"
+                        android:digits="@string/club_identity_digits"
+                        android:hint="@string/club_identity_hint"
+                        android:maxLength="18" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/privateclubtv"
+                    style="@style/club_profile_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/set_to_private_clubs" />
+
+                <RelativeLayout
+                    android:id="@+id/openprivateclubrl"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/privateclubtv">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/ic_privateclubhelp" />
+
+                </RelativeLayout>
+
+                <com.beastbikes.android.widget.SwitchView
+                    android:id="@+id/create_club_private_sv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12.5dp"
+                    android:checked="false" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:background="#e5e5e5" />
+
+            <TextView
+                android:id="@+id/privateclubhelptv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/private_club_help_text"
+                android:textColor="#9f9f9f"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+            <!--
+                        <LinearLayout
+                            android:id="@+id/club_create_profile_review_lay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="15dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="70.5dp"
+                                android:contentDescription="@string/empty"
+                                android:src="@drawable/ic_checkup" />
+
+                            <TextView
+                                android:layout_width="171dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="144dp"
+                                android:layout_marginTop="21.5dp"
+                                android:gravity="center"
+                                android:text="@string/club_create_submit_waiting"
+                                android:textColor="#b2262626"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center"
+                                android:text="@string/club_create_tip_title"
+                                android:textColor="#7f262626"
+                                android:textSize="11dp" />
+
+                            <TextView
+                                android:layout_width="215dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/club_create_tip_content"
+                                android:textColor="#7f262626"
+                                android:textSize="11sp" />
+                        </LinearLayout>  -->
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/club_create_create_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="bottom"
+        android:background="#e34848"
+        android:gravity="center"
+        android:text="@string/club_btn_create"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+
+</FrameLayout>

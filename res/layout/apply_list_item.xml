@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/common_bg_color"
+    android:minHeight="65dp"
+    android:orientation="vertical">
+
+    <com.beastbikes.framework.ui.android.widget.CircleImageView
+        android:id="@+id/apply_list_item_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@string/empty"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_avatar"
+        app:borderColor="@color/common_bg_color"
+        app:borderWidth="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/apply_list_item_avatar"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/apply_list_item_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/font_13" />
+
+            <TextView
+                android:id="@+id/apply_list_item_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:textColor="@color/activity_fragment_tab_bar_item_label_default"
+                android:textSize="@dimen/font_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="11dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/apply_list_item_btn_refuse"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/bg_red_btn"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/activity_club_apply_item_btn_refuse"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:id="@+id/apply_list_item_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/activity_fragment_tab_bar_item_label_default"
+                android:textSize="@dimen/font_13"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/apply_list_item_btn_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/apply_list_item_btn_refuse"
+                android:background="@drawable/bg_apply_list_item_btn_agree"
+                android:drawableLeft="@drawable/ic_agree_friend_apply"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:text="@string/activity_club_apply_item_btn_agree"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_13" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

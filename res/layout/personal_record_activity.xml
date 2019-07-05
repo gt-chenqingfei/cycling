@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/personal_record_activity_header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="30dp">
+
+        <include
+            android:id="@+id/personal_record_activity_header_weekly_elapsed_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/personal_record_activity_header_item" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@color/bg_border_line_color" />
+
+        <include
+            android:id="@+id/personal_record_activity_header_weekly_distance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/personal_record_activity_header_item" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@color/bg_border_line_color" />
+
+        <include
+            android:id="@+id/personal_record_activity_header_weekly_activity_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/personal_record_activity_header_item" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@color/bg_border_line_color" />
+
+        <include
+            android:id="@+id/personal_record_activity_header_weekly_calories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/personal_record_activity_header_item" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_1cffffff_with_border_top_bottom_1px_solid_1affffff"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_weekly_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bg_border_line_color" />
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_weekly_elapsed_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bg_border_line_color" />
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_weekly_calories"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bg_border_line_color" />
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_weekly_risen_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bg_border_line_color" />
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_weekly_activity_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_1cffffff_with_border_top_bottom_1px_solid_1affffff"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_monthly_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bg_border_line_color" />
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_monthly_elapsed_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bg_border_line_color" />
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_monthly_calories"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bg_border_line_color" />
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_monthly_risen_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bg_border_line_color" />
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_monthly_activity_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_1cffffff_with_border_top_bottom_1px_solid_1affffff"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_average_velocity"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bg_border_line_color" />
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_max_velocity"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bg_border_line_color" />
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_max_calories"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bg_border_line_color" />
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_max_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bg_border_line_color" />
+
+                <include
+                    android:id="@+id/personal_record_activity_statistic_max_elapsed_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    layout="@layout/personal_record_activity_statistic_item" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

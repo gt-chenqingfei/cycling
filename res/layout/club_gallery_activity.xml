@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/club_gallery_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070707">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#070707">
+
+            <ImageView
+                android:id="@+id/club_gallery_go_back"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/empty"
+                android:paddingLeft="-4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_back_icon" />
+
+            <TextView
+                android:id="@+id/club_gallery_title_left_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="6dp"
+                android:text="@string/cancel"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_16"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/club_gallery_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_setting_activity_setting_avatar_gallery"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/font_17" />
+
+                <TextView
+                    android:id="@+id/club_gallery_title_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:textColor="#555"
+                    android:textSize="@dimen/font_10" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/club_gallery_title_right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:paddingRight="12dp"
+                android:text="@string/label_edit"
+                android:enabled="false"
+                android:textColor="@color/menu_text_selector"
+                android:textSize="@dimen/font_16" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/club_gallery_upload_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#262626"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/club_gallery_upload_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_arrow_right" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/club_gallery_no_image"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/multi_image_selector_default_error"
+                android:gravity="center"
+                android:text="@string/club_gallery_no_image_label"
+                android:textColor="#333"
+                android:textSize="@dimen/font_12"
+                android:visibility="gone" />
+
+            <com.beastbikes.android.widget.SwipeRefreshAndLoadLayout
+                android:id="@+id/club_gallery_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<com.beastbikes.android.modules.cycling.club.ui.widget.XListView-->
+                <!--android:id="@+id/club_gallery_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:fastScrollEnabled="true"-->
+                <!--android:paddingLeft="2dp"-->
+                <!--android:paddingRight="2dp"-->
+                <!--android:paddingTop="2dp"-->
+                <!--android:scrollbars="vertical" />-->
+
+                <!--<com.huewu.pla.lib.MultiColumnListView xmlns:pla="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/club_gallery_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="#000000"-->
+                <!--pla:plaColumnNumber="2"-->
+                <!--pla:plaLandscapeColumnNumber="2" />-->
+
+                <com.beastbikes.android.widget.stickylistlibrary.stickygridheaders.StickyGridHeadersGridView
+                    android:id="@+id/asset_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:columnWidth="90dip"
+                    android:horizontalSpacing="2dp"
+                    android:numColumns="2"
+                    android:verticalSpacing="2dp" />
+
+            </com.beastbikes.android.widget.SwipeRefreshAndLoadLayout>
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/club_gallery_floating_action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="24dp"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/ic_add_image"
+                app:backgroundTint="#fff"
+                app:elevation="6dp"
+                app:pressedTranslationZ="12dp"
+                app:rippleColor="#fff" />
+
+
+            <com.beastbikes.android.widget.smoothprogressbar.SmoothProgressBar
+                android:id="@+id/club_gallery_progress_bar"
+                style="@style/SmoothProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

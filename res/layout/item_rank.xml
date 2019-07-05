@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color">
+
+    <TextView
+        android:id="@+id/distanceUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:text="@string/club_info_total_distance_unit"
+        android:textColor="@color/member_manager_item_time"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/distanceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/distanceUnit"
+        android:textColor="@color/item_rank_distancetv"
+        android:textSize="18sp" />
+
+
+    <com.beastbikes.framework.ui.android.widget.CircleImageView
+        android:id="@+id/ranking_fragment_list_item_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/empty"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_avatar"
+        app:borderColor="@color/common_bg_color"
+        app:borderWidth="0dp" />
+
+    <RelativeLayout
+        android:layout_width="56dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/rankingNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/ranktv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text_number_color"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ranking_fragment_list_item_avatar"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/distanceValue"
+        android:layout_toRightOf="@+id/ranking_fragment_list_item_avatar"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/text_number_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ranking_fragment_list_item_avatar"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/ranking_fragment_list_item_avatar"
+        android:textColor="@color/activity_fragment_tab_bar_item_label_default"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/clubname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cityName"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/distanceValue"
+        android:layout_toRightOf="@+id/cityName"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/activity_fragment_tab_bar_item_label_default"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/shortSplitLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ranking_fragment_list_item_avatar"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/splitlinecolor"></View>
+
+    <View
+        android:id="@+id/longSplitLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ranking_fragment_list_item_avatar"
+        android:layout_marginTop="22dp"
+        android:background="@color/splitlinecolor"
+        android:visibility="gone"></View>
+
+
+</RelativeLayout>

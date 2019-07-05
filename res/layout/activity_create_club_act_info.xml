@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.modules.cycling.club.ui.widget.richeditor.RichEditorRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_create_club_act_info_RichEditorLinearLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_create_club_act_info_bg">
+    <com.beastbikes.android.modules.cycling.club.ui.widget.richeditor.RichEditor
+        android:id="@+id/activity_create_club_act_info_richeditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center|top" />
+
+    <TextView
+        android:id="@+id/activity_create_club_act_info_count"
+        android:layout_below="@+id/activity_create_club_act_info_richeditor"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="0/3000"/>
+
+    <LinearLayout
+        android:id="@+id/activity_create_club_act_info_addview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+    </LinearLayout>
+</com.beastbikes.android.modules.cycling.club.ui.widget.richeditor.RichEditorRelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item name="group_list_view_type" type="id" />
+    <item name="invalidResId" type="id" />
+    <item name="btn_search" type="id" />
+    <item name="auto_complete" type="id" />
+    <item name="btn_voice" type="id" />
+
+</resources>

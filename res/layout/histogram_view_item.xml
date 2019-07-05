@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="35dp"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/histogram_view_item_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/text_white_color"
+            android:textSize="@dimen/font_10" />
+
+        <TextView
+            android:id="@+id/histogram_view_item_week_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="周一"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_9" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_border_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/histogram_view_item_histogram"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="1dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/histogram_view_item_histogram_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:background="#222" />
+
+    </RelativeLayout>
+
+</LinearLayout>

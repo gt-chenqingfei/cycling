@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:scrollbars="none">
+
+    <!--
+    <com.beastbikes.android.modules.user.filter.other.HorizontialListView
+        android:id="@+id/activity_watermark_gallery_lv_watermark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </com.beastbikes.android.modules.user.filter.other.HorizontialListView>
+    -->
+
+    <LinearLayout
+        android:id="@+id/activity_watermark_gallery_filter_root"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+        <include
+            android:id="@+id/activity_watermark_gallery_filter_filter20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            layout="@layout/activity_watermark_gallery_item_filter" />
+
+
+    </LinearLayout>
+
+</HorizontalScrollView>

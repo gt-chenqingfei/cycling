@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/action_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:scaleType="matrix"
+        android:src="@drawable/ic_record_back" />
+
+    <LinearLayout
+        android:id="@+id/action_bar_tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/action_bar_tools_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="matrix"
+            android:src="@drawable/ic_record_report"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/action_bar_tools_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="matrix"
+            android:src="@drawable/ic_record_camera"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/action_bar_tools_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="matrix"
+            android:src="@drawable/ic_record_share"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_bar_cheat_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/action_bar_tip_cheat"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_black_trans_round"
+            android:drawableLeft="@drawable/ic_record_warn"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/record_cheat_data"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/font_10"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/action_bar_tools_report"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_black_trans_round"
+            android:drawableTop="@drawable/ic_activity_complete_report_icon"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="@string/activity_complete_activity_report"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/font_10"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

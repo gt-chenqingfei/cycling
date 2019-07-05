@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/like_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp">
+        <TextView
+            android:id="@+id/tv_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ea3232"
+            android:textSize="10sp"
+            android:singleLine="true"/>
+        <com.beastbikes.android.widget.LinearListView
+            android:id="@+id/like_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:dividerPadding="5dp"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+    <com.beastbikes.android.widget.LinearListView
+        android:id="@+id/common_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+    <com.beastbikes.android.widget.ListViewForScroll
+        android:id="@+id/common_list1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@null"
+        />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/show_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="#ea3232"
+        android:textSize="11sp"
+        android:text="@string/clubfeed_show_comment"/>
+
+</LinearLayout>

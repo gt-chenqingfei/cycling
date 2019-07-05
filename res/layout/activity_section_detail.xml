@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.widget.ScrollView4CheckBottom xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/section_detail_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/section_detail_map_rl"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/section_detail_baidu_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true" />
+
+            <FrameLayout
+                android:id="@+id/section_google_mapview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+
+            <include
+                android:id="@+id/section_detail_no_google_play_service"
+                layout="@layout/layout_nogoogleplayservice1"
+                android:visibility="gone"></include>
+
+            <ImageView
+                android:id="@+id/transparent_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/section_detail_info"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_below="@id/section_detail_map_rl"
+            android:background="@color/blackFive">
+
+            <TextView
+                android:id="@+id/section_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="110dp"
+                android:layout_marginTop="18dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/section_detail_data_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/section_detail_title"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/speedx_slopes"
+                    android:textColor="@color/text_light_color"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/section_detail_slopes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/text_light_color"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/altitude_difference"
+                    android:textColor="@color/text_light_color"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/section_detail_altitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/text_light_color"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/speedx_distance"
+                    android:textColor="@color/text_light_color"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/section_detail_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/text_light_color"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/section_detail_data_1"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="8dp">
+
+                <RatingBar
+                    android:id="@+id/section_detail_ratingbar"
+                    style="@style/sectionRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:numStars="5"
+                    android:rating="0"></RatingBar>
+
+                <TextView
+                    android:id="@+id/section_detail_member_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/section_ratingbar"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/section_detail_right_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/section_detail_favourite_iv"
+                    android:layout_width="42dp"
+                    android:layout_height="34dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/selector_section_detail_favourite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/speedx_favourite_section"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/section_detail_favourite_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/gray"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="46dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/section_detail_right_ll"
+                android:background="@color/member_manager_listview_divider"></View>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/section_detail_list_headview_view1"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_below="@+id/section_detail_info"
+            android:background="@color/bg_theme_black_color"></View>
+
+        <LinearLayout
+            android:id="@+id/section_detail_list_headview"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@+id/section_detail_list_headview_view1"
+            android:background="@color/blackFive">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:text="@string/section_ranking"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/section_detail_list_headview_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/section_detail_list_headview"
+            android:background="@color/bg_theme_black_color"></View>
+
+        <com.beastbikes.android.widget.PullRefreshListView4ScrollView
+            android:id="@+id/section_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/section_detail_list_headview_view"
+            android:background="@color/blackFive"
+            android:divider="@color/bg_theme_black_color"
+            android:dividerHeight="1px" />
+    </RelativeLayout>
+
+</com.beastbikes.android.widget.ScrollView4CheckBottom>

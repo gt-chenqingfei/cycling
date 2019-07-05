@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:holo="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/task_info_browser_menu_share"
+        android:icon="@drawable/ic_share_icon"
+        holo:showAsAction="always"
+        android:title="@string/task_info_browser_menu_title" />
+
+</menu>

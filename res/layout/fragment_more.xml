@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="66dp"
+            android:background="@color/bg_border_line_color" />
+
+        <include
+            android:id="@+id/goal_settings"
+            layout="@layout/layout_morefragment_detail"
+            android:layout_width="match_parent"
+            android:layout_height="72dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="66dp"
+            android:background="@color/bg_border_line_color" />
+
+        <include
+            android:id="@+id/profile_fragment_detail_item_grid"
+            layout="@layout/layout_morefragment_detail"
+            android:layout_width="match_parent"
+            android:layout_height="72dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="66dp"
+            android:background="@color/bg_border_line_color" />
+
+        <include
+            android:id="@+id/settings"
+            layout="@layout/layout_morefragment_detail"
+            android:layout_width="match_parent"
+            android:layout_height="72dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bg_border_line_color" />
+
+    </LinearLayout>
+
+</RelativeLayout>

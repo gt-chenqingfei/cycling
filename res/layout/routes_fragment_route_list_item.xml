@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:paddingBottom="1px">
+
+    <include
+        android:id="@+id/route_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/list_loading_view"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/route_fragment_route_list_item_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:contentDescription="@string/empty"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4c000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/route_fragment_route_list_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_26" />
+
+        <TextView
+            android:id="@+id/route_fragment_route_list_item_english_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="#7fffffff"
+            android:textSize="@dimen/font_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/routes_fragment_difficulty_coefficient"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_12" />
+
+            <RatingBar
+                android:id="@+id/route_fragment_route_list_item_difficulty_coefficient"
+                style="@style/YellowRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/route_fragment_route_list_item_total_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/routes_fragment_total_distance"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/route_fragment_route_list_item_follower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/routes_fragment_followed"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/route_fragment_route_list_item_distance_to_me"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="&lt;32 km"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+
+</FrameLayout>

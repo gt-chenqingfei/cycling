@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:banner="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_theme_black_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/activity_follow_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_follow_search_333"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/ic_search_icon" />
+
+        <EditText
+            android:id="@+id/follow_activity_search_et"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:background="@null"
+            android:hint="@string/friends_search_edittext_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#777777"
+            android:textColorHint="#ccc"
+            android:textCursorDrawable="@drawable/edit_text_cursor"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+
+    <com.beastbikes.android.widget.convenientbanner.ConvenientBanner
+        android:id="@+id/follow_activity_other_banner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/common_bg_color"
+        banner:canLoop="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/common_bg_color">
+
+        <TextView
+            android:id="@+id/activity_follow_empty_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/ic_cycling_default"
+            android:text="@string/activity_follow_empty_tip"
+            android:textColor="@color/color_686868"
+            android:textSize="@dimen/font_14" />
+
+        <LinearLayout
+            android:id="@+id/follow_activity_list_parent_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/common_bg_color"
+        android:fillViewport="true"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/activity_clubfeed_post_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_black_color"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_black_color"
+                    android:cursorVisible="true"
+                    android:gravity="top|left"
+                    android:hint="@string/club_feed_post_hint"
+                    android:maxHeight="300dp"
+                    android:maxLength="140"
+                    android:minHeight="110dp"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#777777"
+                    android:textCursorDrawable="@drawable/shape_text_cursor_color"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/add_pic_lay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"></LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clubfeed_add_record"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_clubfeed_post_ll"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/bg_black_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_record_img"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_feed_cycling" />
+
+                <TextView
+                    android:id="@+id/tv_record_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/club_feed_add_cycling_record"
+                    android:textColor="#888888"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_right_icon"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_arrow_right_icon" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/bg_black_color"
+        android:paddingLeft="10dp">
+
+        <CheckBox
+            android:id="@+id/clubfeed_save_cb"
+            style="@style/TutorialCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:checked="false"
+            android:text="@string/club_post_image_save_gallery"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

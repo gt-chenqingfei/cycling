@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/localtion_selsect_activity_mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/localtion_selsect_activity_make_zomm"
+            android:layout_width="39dp"
+            android:layout_height="92dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/route_map_make_search_bg" />
+
+            <LinearLayout
+                android:id="@+id/route_map_make_zoom_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/localtion_selsect_activity_button_zoom_out"
+                    android:layout_width="39dp"
+                    android:layout_height="46dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_map_zoom_out" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="#dddddd" />
+
+                <ImageView
+                    android:id="@+id/localtion_selsect_activity_button_zoom_in"
+                    android:layout_width="39dp"
+                    android:layout_height="46dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_map_zoom_in" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/route_map_make_point_list"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ProgressBar
+            android:id="@+id/localtion_selsect_activity_pb"
+            style="@android:attr/progressBarStyleLarge"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/localtion_selsect_activity_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+</LinearLayout>

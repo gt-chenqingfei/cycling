@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_activity_cycling_speed_size">120sp</dimen>
+</resources>

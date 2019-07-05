@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Pull to refresh -->
+    <string name="pull_down_to_refresh_pull_label">Pull to refresh&#8230;</string>
+    <string name="pull_up_to_refresh_pull_label">Pull to load more&#8230;</string>
+    <string name="pull_to_refresh_release_label">Release to load&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">Loading&#8230;</string>
+
+
+    <string name="search_btn_text_default">Pull to refresh&#8230;</string>
+    <string name="search_hint_default">Search</string>
+</resources>

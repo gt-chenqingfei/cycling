@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="50dp"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/item_section_detail_rank_tv"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:textColor="@color/text_light_color" />
+
+    <com.beastbikes.framework.ui.android.widget.CircleImageView
+        android:id="@+id/item_section_detail_avater"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/item_section_detail_rank_tv"
+        android:src="@drawable/ic_avatar" />
+
+    <TextView
+        android:id="@+id/item_section_detail_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/pinkishGrey"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/item_section_detail_avater" />
+
+    <TextView
+        android:id="@+id/item_section_detail_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/text_light_color"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:id="@+id/section_detail_list_headview_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_theme_black_color"></View>
+
+</RelativeLayout>

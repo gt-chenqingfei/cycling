@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|bottom"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="40dp">
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:id="@+id/authentication_switch_to_sign_up_by_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/authentication_switch_sign_up_margin_left"
+        android:layout_marginLeft="@dimen/authentication_switch_sign_up_margin_left"
+        android:background="@drawable/border_1px_solid_b9b9b9_width_radius_30dp"
+        android:gravity="center"
+        android:text="@string/authentication_sign_up_fragment_by_phone"
+        android:textColor="#b2ffffff" />
+
+    <Button
+        android:id="@+id/authentication_switch_to_sign_up_by_email"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/authentication_switch_sign_up_margin_top"
+        android:layout_marginRight="@dimen/authentication_switch_sign_up_margin_left"
+        android:layout_marginLeft="@dimen/authentication_switch_sign_up_margin_left"
+        android:background="@drawable/border_1px_solid_b9b9b9_width_radius_30dp"
+        android:gravity="center"
+        android:text="@string/authentication_sign_up_fragment_by_email"
+        android:textColor="#b2ffffff" />
+
+
+</LinearLayout>

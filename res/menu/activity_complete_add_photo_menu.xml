@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/activity_complete_edit"
+        android:title="@string/activity_complete_activity_photo_edit" />
+    <item
+        android:id="@+id/activity_complete_delete"
+        android:title="@string/activity_complete_activity_photo_delete" />
+    <item
+        android:id="@+id/activity_complete_cancle"
+        android:title="@string/activity_complete_activity_photo_cancel" />
+
+</menu>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/message_content_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/message_tiem_bg"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_12" />
+
+    <LinearLayout
+        android:id="@+id/message_content_msg_by_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/ic_launch_logo" />
+
+        <TextView
+            android:id="@+id/message_content_msg_by_server_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="12dp"
+            android:autoLink="web"
+            android:background="@drawable/ic_message_content_bg"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingBottom="12dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:textColor="#444"
+            android:text="fasfsafasfafafsaflafjoejfsojfwoejflsafjeiojflafjeijfeijf"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/font_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message_content_msg_by_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/message_content_msg_by_client_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:autoLink="web"
+            android:background="@drawable/ic_message_content_bg"
+            android:gravity="center_vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:textColor="#444"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/font_16" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_weight="0"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+</LinearLayout>

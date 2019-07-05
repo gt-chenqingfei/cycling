@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:progress="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sync_data_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/label_syncing_activity"
+        android:textColor="#000000"
+        android:textSize="@dimen/font_17" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <com.beastbikes.android.ble.ui.painter.PowerView
+            android:id="@+id/sync_data_progress_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            progress:external_progress_color="@color/designcolor_c7"
+            progress:inside_progress_color="#d9d9d9"
+            progress:stroke_width="8dp"
+            progress:units=" " />
+
+        <TextView
+            android:id="@+id/sync_data_progress_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#212121"
+            android:textSize="@dimen/font_17" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/sync_data_progress_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/sync_data_message"
+        android:textColor="#000000"
+        android:textSize="@dimen/font_12" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d9d9d9" />
+
+    <TextView
+        android:id="@+id/sync_data_cancel_sync"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="@string/sync_data_cancel_sync"
+        android:textColor="@color/designcolor_c7"
+        android:textSize="@dimen/font_17" />
+
+</LinearLayout>

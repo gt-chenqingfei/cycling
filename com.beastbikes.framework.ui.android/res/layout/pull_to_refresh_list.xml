@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.framework.ui.android.lib.pulltorefresh.PullToRefreshListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pullRefreshAbsListView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:cacheColorHint="@android:color/transparent"
+    android:divider="#ccc"
+    android:dividerHeight="0dp"
+    android:fastScrollEnabled="false"
+    ptr:ptrMode="both" />

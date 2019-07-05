@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_chart_no_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_chart_has_no_data"
+    android:visibility="gone"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="23.5dp"
+        android:paddingRight="23.5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_chart_no_data_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_have_not_connect_heart_rate_device"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/textView_chart_no_data_function_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="6.5dp"
+            android:textSize="13sp"
+            android:textColor="@android:color/white"
+            android:text="@string/str_heart_rate_no_data_desc"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_chart_no_data_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chart_no_cadence"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/linear_temp"
+        android:layout_marginBottom="27dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_chart_no_data_bottom_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="18.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#999999"
+        android:textSize="11dp"
+        android:text="@string/str_heart_rate_only_support_desc"
+        />
+</RelativeLayout>

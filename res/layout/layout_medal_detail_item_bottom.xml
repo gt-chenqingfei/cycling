@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="80dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/activity_medal_info_light_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/text_white_color"
+        android:textSize="@dimen/font_13"
+        tools:text="20人" />
+
+    <TextView
+        android:id="@+id/activity_medal_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_white_color"
+        android:textSize="@dimen/font_24" />
+
+    <TextView
+        android:id="@+id/activity_medal_info_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/label_medal_un_get"
+        android:textColor="#444"
+        android:textSize="@dimen/font_11" />
+
+    <TextView
+        android:id="@+id/activity_medal_info_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/text_black_color"
+        android:textSize="@dimen/font_12" />
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="14dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_section_filter_star" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/speedx_difficulty"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp">
+
+                <include
+                    android:id="@+id/item_section_filter_difficulty1"
+                    layout="@layout/item_section_filter_difficulty"></include>
+
+                <include
+                    android:id="@+id/item_section_filter_difficulty2"
+                    layout="@layout/item_section_filter_difficulty"></include>
+
+                <include
+                    android:id="@+id/item_section_filter_difficulty3"
+                    layout="@layout/item_section_filter_difficulty"></include>
+
+                <include
+                    android:id="@+id/item_section_filter_difficulty4"
+                    layout="@layout/item_section_filter_difficulty"></include>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp">
+
+                <include
+                    android:id="@+id/item_section_filter_difficulty5"
+                    layout="@layout/item_section_filter_difficulty"></include>
+
+                <include
+                    android:id="@+id/item_section_filter_difficulty6"
+                    layout="@layout/item_section_filter_difficulty"></include>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/discover_color2"></View>
+
+
+        <include
+            android:id="@+id/layout_activity_section_filter_seekbar1"
+            layout="@layout/layout_activity_section_filter_seekbar"></include>
+
+        <include
+            android:id="@+id/layout_activity_section_filter_seekbar2"
+            layout="@layout/layout_activity_section_filter_seekbar"></include>
+
+        <include
+            android:id="@+id/layout_activity_section_filter_seekbar3"
+            layout="@layout/layout_activity_section_filter_seekbar"></include>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/layout_activity_section_filter_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/activity_alert_dialog_text_ok"
+        android:textColor="@color/common_bg_color"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

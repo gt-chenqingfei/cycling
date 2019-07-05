@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:text="@string/activity_member_manager_captain_label"
+        android:textColor="@color/member_managet_label"
+        android:textSize="@dimen/font_12" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_border_line_color" />
+
+    <include
+        android:id="@+id/captain_layout"
+        layout="@layout/club_member_list_item"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="50dp"
+        android:background="@color/bg_border_line_color"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:text="@string/activity_member_manager_member_label"
+        android:textColor="@color/member_managet_label"
+        android:textSize="@dimen/font_12" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_border_line_color" />
+
+    <ListView
+        android:id="@+id/activity_club_manager_member_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"></ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_border_line_color" />
+
+
+</LinearLayout>

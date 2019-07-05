@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:number="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/cycling_fragment_cycling_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/cycling_fragment_cycling_data_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/cycling_data_setting_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/bg_border_line_color" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fragment_cycling_svg_speed_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="-8dp"
+                        android:text="@string/cycling_fragment_real_time_speed"
+                        android:textColor="@color/text_white_color"
+                        android:textSize="@dimen/font_13" />
+
+                    <com.beastbikes.android.widget.NumberTextView
+                        android:id="@+id/cycling_fragment_svg_speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0.0"
+                        android:textColor="@color/text_white_color"
+                        android:textSize="@dimen/font_activity_cycling_speed_size"
+                        number:typefaceName="@string/number_type_face_name" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/bg_border_line_color" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fragment_cycling_distance_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/activity_finished_activity_distance_unit"
+                        android:textColor="@color/text_white_color"
+                        android:textSize="@dimen/font_13" />
+
+                    <com.beastbikes.android.widget.NumberTextView
+                        android:id="@+id/cycling_fragment_real_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0.0"
+                        android:textColor="@color/text_white_color"
+                        android:textSize="@dimen/font_65"
+                        number:typefaceName="@string/number_type_face_name" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.beastbikes.android.widget.convenientbanner.ConvenientBanner
+                android:id="@+id/cycling_fragment_data_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                number:canLoop="true" />
+
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/cycling_fragment_cycling_finish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/ic_cycling_finish_icon"
+                android:gravity="center_horizontal"
+                android:text="@string/activity_state_label_finish"
+                android:textColor="@color/text_white_color"
+                android:textSize="@dimen/font_10" />
+
+            <TextView
+                android:id="@+id/cycling_fragment_cycling_resume_or_pause"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/ic_cycling_pause_icon"
+                android:gravity="center_horizontal"
+                android:text="@string/activity_state_label_pause"
+                android:textColor="@color/text_white_color"
+                android:textSize="@dimen/font_10" />
+
+            <TextView
+                android:id="@+id/cycling_fragment_cycling_map"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/ic_cycling_map_icon"
+                android:gravity="center_horizontal"
+                android:text="@string/activity_fragment_tab_map"
+                android:textColor="@color/text_white_color"
+                android:textSize="@dimen/font_10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cycling_activity_hide_cycling_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="top|right"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_cycling_hide_cycling_view_icon" />
+
+        <LinearLayout
+            android:id="@+id/activity_cycling_gps_status_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/bg_activity_cycling_gps_status"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp">
+
+                <View
+                    android:id="@+id/activity_cycling_gps_status_view1"
+                    android:layout_width="2dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/designcolor_c7" />
+
+                <View
+                    android:id="@+id/activity_cycling_gps_status_view2"
+                    android:layout_width="2dp"
+                    android:layout_height="9dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="3dp"
+                    android:background="@color/designcolor_c7" />
+
+                <View
+                    android:id="@+id/activity_cycling_gps_status_view3"
+                    android:layout_width="2dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@color/designcolor_c7" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:text="@string/GPS"
+                android:textColor="@color/warmGrey2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/activity_cycling_gps_status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/positioning"
+                android:textColor="@color/designcolor_c7"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Auto Pause Preference -->
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="beast.setting.autopause"
+        android:persistent="true" />
+
+    <!-- Voice Feedback Preference -->
+    <com.beastbikes.framework.android.preference.IntegerEditTextPreference
+        android:defaultValue="0x8000000f"
+        android:key="beast.setting.voicefeedback"
+        android:persistent="true" />
+
+    <!-- Location Accuracy Preference -->
+    <com.beastbikes.framework.android.preference.IntegerEditTextPreference
+        android:defaultValue="0"
+        android:key="beast.setting.accuracy"
+        android:persistent="true" />
+
+</PreferenceScreen>

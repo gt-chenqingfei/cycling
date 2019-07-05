@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:holo="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_post_dynamic"
+        android:title="@string/menu_post_dynamic"
+        android:icon="@drawable/menu_post_dynamic"
+        holo:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_post_activity"
+        android:title="@string/menu_post_activity"
+        android:icon="@drawable/menu_post_activity"
+        holo:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_post_notice"
+        android:title="@string/menu_post_notice"
+        android:icon="@drawable/menu_post_notice"
+        holo:showAsAction="never" />
+
+
+</menu>

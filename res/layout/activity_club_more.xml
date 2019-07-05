@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splitlinecolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/common_bg_color"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/activity_club_manager_history_notice"
+                layout="@layout/universal_item"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_club_manager_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/common_bg_color"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <include
+                android:id="@+id/activity_club_level"
+                layout="@layout/universal_item"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="62dp"
+                android:background="@color/splitlinecolor"/>
+
+            <include
+                android:id="@+id/activity_club_manager_ablum"
+                layout="@layout/universal_item"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="62dp"
+                android:background="@color/splitlinecolor"/>
+
+            <include
+                android:id="@+id/activity_club_manager_member"
+                layout="@layout/universal_item"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <View
+                android:id="@+id/activity_club_manager_apply_view"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="62dp"
+                android:background="@color/splitlinecolor"/>
+
+            <include
+                android:id="@+id/activity_club_manager_apply"
+                layout="@layout/universal_item"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <View
+                android:id="@+id/activity_club_manager_member_view"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="62dp"
+                android:background="@color/splitlinecolor"/>
+
+            <include
+                android:id="@+id/activity_club_manager_info_setting"
+                layout="@layout/universal_item"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <View
+                android:id="@+id/activity_club_manager_info_setting_view"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="62dp"
+                android:background="@color/splitlinecolor"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/activity_club_manager_invite"
+                layout="@layout/universal_item"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="62dp"
+                android:background="@color/splitlinecolor"/>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/activity_club_manager_transfer_ll">
+
+        <include
+            android:id="@+id/activity_club_manager_transfer"
+            layout="@layout/universal_item"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/splitlinecolor"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/activity_club_manager_quit_club"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/common_bg_color"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/splitlinecolor"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/activity_club_manager_item_quit"
+                android:textColor="@color/designcolor_c7"
+                android:textSize="@dimen/font_17" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/splitlinecolor"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/activity_complain_contact_et"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="9dp"
+        android:background="@drawable/activity_complain_edittext_bg"
+        android:hint="@string/activity_complain_contact_hint"
+        android:padding="8dp"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textColor="#3d4245"
+        android:textColorHint="#ccc"
+
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:textSize="@dimen/font_15" />
+
+    <EditText
+        android:id="@+id/activity_complain_question_et"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_margin="9dp"
+        android:background="@drawable/activity_complain_edittext_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/activity_complain_question_content"
+        android:maxLength="300"
+        android:minLines="12"
+        android:padding="8dp"
+        android:textColor="#3d4245"
+        android:textColorHint="#ccc"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:textSize="@dimen/font_15" />
+
+</LinearLayout>

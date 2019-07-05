@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/club_act_bg">
+
+    <ScrollView
+        android:id="@+id/club_act_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/club_act_map_img"
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <ImageView
+                    android:id="@+id/club_act_map_img_src"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/club_act_map_loading" />
+
+                <View
+                    android:id="@+id/club_act_map_img_src_layer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/club_act_map_img_src_layer" />
+
+                <RelativeLayout
+                    android:id="@+id/club_act_map_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/club_act_icon_add"
+                        android:layout_width="32dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/club_act_icon_add" />
+
+                    <TextView
+                        android:id="@+id/club_act_icon_add_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/club_act_icon_add"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/club_act_icon_add"
+                        android:textColor="@color/text_default" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/club_act_white"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/club_act_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:hint="@string/club_act_theme"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:textColor="@color/club_act_black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/club_act_info"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/club_act_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/club_act_info_str"
+                    android:textColor="@color/club_act_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/club_act_info_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="15dp"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="@string/club_act_info"
+                    android:textColor="@color/designcolor_c7"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center|left"
+                android:text="@string/club_act_info_desc_str"
+                android:textColor="@color/club_act_black"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/club_act_starttime"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/club_act_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/club_act_starttime_str"
+                    android:textColor="@color/club_act_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/club_act_starttime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="15dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/club_act_time_str"
+                    android:textColor="@color/club_act_black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/club_act_endtime"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/club_act_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/club_act_endtime_str"
+                    android:textColor="@color/club_act_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/club_act_endtime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="15dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/club_act_time_str"
+                    android:textColor="@color/club_act_black"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/club_act_info_place"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/club_act_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/club_act_info_place"
+                    android:textColor="@color/club_act_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/club_act_info_place_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="15dp"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="@string/club_act_info_place_str"
+                    android:textColor="@color/designcolor_c7"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center|left"
+                android:text="@string/club_act_desc_str"
+                android:textColor="@color/club_act_black"
+                android:textSize="12sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/club_act_white">
+
+                <ImageView
+                    android:id="@+id/club_act_icon_iphone"
+                    android:layout_width="10dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/icon_club_act__iphone" />
+
+                <TextView
+                    android:id="@+id/club_act_icon_iphone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="12sp"
+                    android:layout_toRightOf="@+id/club_act_icon_iphone"
+                    android:text="@string/club_act_iphone_str"
+                    android:textColor="@color/club_act_black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/club_create_zone_tv"
+                    android:layout_toRightOf="@+id/club_act_icon_iphone_tv"
+                    style="@style/club_profile_text_style"
+                    android:layout_centerVertical="true"
+                    android:text="+86"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <View
+                    android:id="@+id/club_create_divider"
+                    android:layout_toRightOf="@+id/club_create_zone_tv"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#cc222222"
+                    />
+
+                <EditText
+                    android:layout_toRightOf="@+id/club_create_divider"
+                    android:id="@+id/club_act_iphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:gravity="right|center"
+                    android:hint="@string/club_act_icon_iphone_hint"
+                    android:inputType="phone"
+                    android:textColor="@color/club_act_black"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/club_act_white">
+
+                <ImageView
+                    android:id="@+id/club_act_icon_user"
+                    android:layout_width="10dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/icon_club_act__user" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="12sp"
+                    android:layout_toRightOf="@+id/club_act_icon_user"
+                    android:text="@string/club_act_user_str"
+                    android:textColor="@color/club_act_black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/club_act_user_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:gravity="right|center"
+                    android:inputType="phone"
+                    android:maxLength="3"
+                    android:hint="50"
+                    android:textColor="@color/club_act_black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/club_release_act_more_setting_group"
+                layout="@layout/club_release_act_more_setting_group" />
+
+            <LinearLayout
+                android:id="@+id/club_release_act_more_setting_group_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/club_act_add_route"
+                    layout="@layout/club_act_add_route" />
+
+                <include
+                    android:id="@+id/club_act_deadline"
+                    layout="@layout/club_act_deadline" />
+
+                <include
+                    android:id="@+id/club_act_add_isclub"
+                    layout="@layout/club_act_add_isclub" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/club_act_commit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="#DD000000"
+        android:gravity="center"
+        android:text="@string/activity_club_release_activities_activity_commit"
+        android:textColor="@color/club_act_white"
+        android:textSize="17sp" />
+</RelativeLayout>

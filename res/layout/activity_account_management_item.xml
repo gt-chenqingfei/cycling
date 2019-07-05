@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/bg_black_color"
+    android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/account_management_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_black_color"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/activity_account_management_item_account_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginTop="9dp" />
+
+        <TextView
+            android:id="@+id/activity_account_management_item_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11.5dp"
+            android:layout_toRightOf="@+id/activity_account_management_item_account_icon"
+            android:textColor="@color/text_white_color"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/activity_account_management_item_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="12.5dp"
+            android:textColor="@color/wheel_view_cancel"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/activity_account_management_item_binding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12.5dp"
+            android:background="@drawable/activity_club_activity_list_now"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="@string/activity_account_management_binding"
+            android:textColor="@color/designcolor_c7"
+            android:textSize="@dimen/font_13"
+            android:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>

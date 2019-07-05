@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/activity_club_info_setting_logo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/activity_club_info_setting_logo_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="@string/club_info_setting_logo_label"
+                android:textColor="@color/clubinfosetting_label_color"
+                android:textSize="@dimen/font_15" />
+
+            <com.beastbikes.framework.ui.android.widget.CircleImageView
+                android:id="@+id/activity_club_info_setting_logo_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/activity_club_info_setting_logo_arrow"
+                android:src="@drawable/ic_club_setting_default_logo" />
+
+            <ImageView
+                android:id="@+id/activity_club_info_setting_logo_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/ic_arrow_right_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bg_border_line_color"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/bg_border_line_color"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/activity_club_info_setting_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_bg_color">
+
+                <TextView
+                    android:id="@+id/activity_club_info_setting_name_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:text="@string/club_info_setting_name_label"
+                    android:textColor="@color/clubinfosetting_label_color"
+                    android:textSize="@dimen/font_15" />
+
+                <TextView
+                    android:id="@+id/activity_club_info_setting_name_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9dp"
+                    android:layout_toLeftOf="@+id/activity_club_info_setting_name_arrow"
+                    android:gravity="right"
+                    android:textColor="@color/clubinfosetting_label_color2"
+                    android:textSize="@dimen/font_14" />
+
+                <ImageView
+                    android:id="@+id/activity_club_info_setting_name_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:contentDescription="@string/empty"
+                    android:src="@drawable/ic_arrow_right_icon"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/bg_border_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/activity_club_info_setting_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_bg_color">
+
+                <TextView
+                    android:id="@+id/activity_club_info_setting_desc_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:text="@string/club_info_setting_desc_label"
+                    android:textColor="@color/clubinfosetting_label_color"
+                    android:textSize="@dimen/font_15" />
+
+                <TextView
+                    android:id="@+id/activity_club_info_setting_desc_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9dp"
+                    android:layout_toLeftOf="@+id/activity_club_info_setting_desc_arrow"
+                    android:gravity="right"
+                    android:textColor="@color/clubinfosetting_label_color2"
+                    android:textSize="@dimen/font_14" />
+
+                <ImageView
+                    android:id="@+id/activity_club_info_setting_desc_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:contentDescription="@string/empty"
+                    android:src="@drawable/ic_arrow_right_icon"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/bg_border_line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/privateclubtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:text="@string/set_to_private_clubs"
+                    android:textColor="@color/clubinfosetting_label_color"
+                    android:textSize="@dimen/font_15" />
+
+                <RelativeLayout
+                    android:id="@+id/openprivateclubrl"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/privateclubtv">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/ic_privateclubhelp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <com.beastbikes.android.widget.materialdesign.mdswitch.Switch
+                    android:id="@+id/create_club_private_sv"
+                    style="@style/material_design_switch_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12.5dp"
+                    android:checked="false" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/bg_border_line_color" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

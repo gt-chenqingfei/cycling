@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <include
+            android:id="@+id/profile_fragment_header"
+            layout="@layout/profile_fragment_header" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <include
+            android:id="@+id/profile_fragment_cycling_details"
+            layout="@layout/profile_fragment_cycling_details" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <TextView
+            android:id="@+id/profile_fragment_same_grid_count_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/bg_black_color"
+            android:drawableLeft="@drawable/red_dot_bg"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="13dp"
+            android:text="@string/profile_fragment_same_grid_count"
+            android:textColor="#979797"
+            android:textSize="@dimen/font_14"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/splitlinecolor" />
+
+        <include
+            android:id="@+id/profile_fragment_detail"
+            layout="@layout/profile_fragment_details" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <LinearLayout
+            android:id="@+id/profile_fragment_histogram_user_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_black_color"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+
+</ScrollView>

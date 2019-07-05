@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/universal_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:contentDescription="@string/empty" />
+
+    <TextView
+        android:id="@+id/universal_item_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/universal_item_icon"
+        android:textColor="@color/text_white_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/universal_item_no_text_dot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/universal_item_lable"
+        android:background="@drawable/bg_oval"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/universal_item_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/universal_item_lable"
+        android:background="@drawable/bg_oval"
+        android:textColor="#fff"
+        android:textSize="@dimen/font_10"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/universal_item_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/universal_item_dot"
+        android:background="@drawable/club_info_already_apply"
+        android:text="@string/club_info_item_new"
+        android:textColor="#fff"
+        android:textSize="@dimen/font_10"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/universal_item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/empty"
+        android:paddingRight="14dp"
+        android:src="@drawable/ic_arrow_right_icon" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="11dp"
+        android:layout_toLeftOf="@id/universal_item_arrow"
+        android:gravity="center_vertical|right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/universal_item_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#656565"
+            android:textSize="@dimen/font_16"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/universal_item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#999"
+            android:textSize="@dimen/font_9"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

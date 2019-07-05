@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Pull to refresh -->
+    <string name="pull_down_to_refresh_pull_label">下拉即可刷新&#8230;</string>
+    <string name="pull_up_to_refresh_pull_label">上拉加载更多&#8230;</string>
+    <string name="pull_to_refresh_release_label">松开加载&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">正在加载&#8230;</string>
+
+
+    <string name="search_btn_text_default">搜索</string>
+    <string name="search_hint_default">请输入搜索内容</string>
+</resources>

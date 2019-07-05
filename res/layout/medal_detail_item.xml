@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_medal_info">
+
+    <ImageView
+        android:id="@+id/activity_medal_info_light_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_medal_info_light"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/activity_medal_info_icon"
+        android:layout_width="160dp"
+        android:layout_height="172dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        tools:src="@drawable/ic_close_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <ViewStub
+            android:id="@+id/activity_medal_info_viewStub_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/layout_medal_detail_item_bottom" />
+
+        <ViewStub
+            android:id="@+id/activity_medal_info_viewStub_push_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/layout_medal_detail_item_push_bottom" />
+
+    </LinearLayout>
+
+</RelativeLayout>

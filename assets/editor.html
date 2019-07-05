@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="editor" contentEditable="true"></div>
+<script type="text/javascript" src="rich_editor.js"></script>
+<script type="text/javascript">
+            function testAlert(){
+                <!--document.body.appendChild('我<br>啊');-->
+                <!--var p = document.createElement("p");-->
+                <!--p.innerHTML = '我<br>啊';-->
+                <!--document.body.appendChild(p);-->
+                document.getElementById('editor').innerHTML = '';
+            }
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_black_color"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/profile_fragment_detail_item_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:drawableRight="@drawable/ic_arrow_right_icon"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="13dp"
+        android:text="@string/personal_record_activity_other_title"
+        android:textColor="@color/text_white_color"
+        android:textSize="@dimen/font_13" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_weight="0"
+        android:background="#222" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/profile_fragment_statistic_item_total_elapsed_time"
+            layout="@layout/profile_fragment_statistic_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#222" />
+
+        <include
+            android:id="@+id/profile_fragment_statistic_item_total_distance"
+            layout="@layout/profile_fragment_statistic_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#222" />
+
+        <include
+            android:id="@+id/profile_fragment_statistic_item_total_calories"
+            layout="@layout/profile_fragment_statistic_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#222" />
+
+        <include
+            android:id="@+id/profile_fragment_statistic_item_total_times"
+            layout="@layout/profile_fragment_statistic_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>

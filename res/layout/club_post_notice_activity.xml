@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black_color"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/club_post_notice_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:drawableBottom="@drawable/line"
+        android:gravity="left|top"
+        android:hint="@string/club_info_item_club_post_notice_hint"
+        android:maxLength="70"
+        android:maxLines="10"
+        android:padding="14dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#888888"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:textSize="@dimen/font_15" />
+
+
+</LinearLayout>

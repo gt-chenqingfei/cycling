@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_club_act_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/club_act_manage_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/activity_club_act_manager_like_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="@color/blackSix"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_club_act_manager_like_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:text="@string/likescount"
+                android:textColor="@color/feedback_activity_back_background"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/activity_club_act_manager_read_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="@color/blackSix"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_club_act_manager_read_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:text="@string/readcount"
+                android:textColor="@color/feedback_activity_back_background"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f1f1f1"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/activity_club_act_manager_member"
+            android:layout_width="12.5dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_item_arrow" />
+
+        <TextView
+            android:id="@+id/activity_club_act_manager_member_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/activity_club_act_manager_member"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/activity_club_act_manager_member_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/activity_club_act_manager_member_count"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <include
+                android:id="@+id/activity_club_act_manager_member_layout1"
+                layout="@layout/activity_club_act_manager_member_layout"></include>
+
+            <include
+                android:id="@+id/activity_club_act_manager_member_layout2"
+                layout="@layout/activity_club_act_manager_member_layout"></include>
+
+            <include
+                android:id="@+id/activity_club_act_manager_member_layout3"
+                layout="@layout/activity_club_act_manager_member_layout"></include>
+
+            <include
+                android:id="@+id/activity_club_act_manager_member_layout4"
+                layout="@layout/activity_club_act_manager_member_layout"></include>
+
+            <include
+                android:id="@+id/activity_club_act_manager_member_layout5"
+                layout="@layout/activity_club_act_manager_member_layout"></include>
+
+            <include
+                android:id="@+id/activity_club_act_manager_member_layout6"
+                layout="@layout/activity_club_act_manager_member_layout"></include>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/activity_club_act_manager_signin"
+            layout="@layout/activity_club_act_manager_item"></include>
+
+        <include
+            android:id="@+id/activity_club_act_manager_batch"
+            layout="@layout/activity_club_act_manager_item"></include>
+
+        <include
+            android:id="@+id/activity_club_act_manager_check"
+            layout="@layout/activity_club_act_manager_item"></include>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/activity_club_act_manager_edit"
+            layout="@layout/activity_club_act_manager_item"></include>
+
+        <include
+            android:id="@+id/activity_club_act_manager_repost"
+            layout="@layout/activity_club_act_manager_item"></include>
+
+        <include
+            android:id="@+id/activity_club_act_manager_cancel"
+            layout="@layout/activity_club_act_manager_item"></include>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="24dp"
+        android:background="@color/wheel_view_line_color"></View>
+
+    <RelativeLayout
+        android:id="@+id/activity_club_act_manager_invate_rl"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12sp"
+            android:text="@string/invate_more_friend_join"
+            android:textColor="@color/club_rank_title_bg"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/activity_club_act_manager_invate"
+            android:layout_width="12.5dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_item_arrow" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/wheel_view_line_color"></View>
+
+</LinearLayout>

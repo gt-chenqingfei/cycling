@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:id="@+id/activity_watermark_gallery_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:id="@+id/activity_watermark_gallery_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/empty"
+            android:paddingBottom="13dp"
+            android:paddingTop="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_activity_watermark_back" />
+
+        <ImageView
+            android:id="@+id/activity_watermark_gallery_reverse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="63dp"
+            android:layout_toRightOf="@+id/activity_watermark_gallery_back"
+            android:contentDescription="@string/empty"
+            android:paddingBottom="13dp"
+            android:paddingTop="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_activity_watermark_gallery_reverse" />
+
+        <ImageView
+            android:id="@+id/activity_watermark_gallery_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="63dp"
+            android:layout_toLeftOf="@+id/activity_watermark_gallery_next"
+            android:contentDescription="@string/empty"
+            android:paddingBottom="12dp"
+            android:paddingTop="13dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_activity_watermark_gallery_rotate" />
+
+        <TextView
+            android:id="@+id/activity_watermark_gallery_next"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="@string/next"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_watermark_gallery_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_watermark_gallery_bar"
+        android:background="#ddd">
+
+        <jp.co.cyberagent.android.gpuimage.GPUImageView
+            android:id="@+id/activity_watermark_gallery_gpuimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/activity_watermark_gallery_save_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <RelativeLayout
+            android:id="@+id/activity_watermark_gallery_stage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_watermark_gallery_preview"
+        android:background="#1a1a1a"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <com.beastbikes.android.modules.user.filter.other.DrawableCenterTextView
+                android:id="@+id/activity_watermark_gallery_tab_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:text="@string/activity_watermark_tab_filter"
+                android:drawableLeft="@drawable/ic_filter"
+                android:textColor="@color/watermark_gallery_activity_tab_bar_item_label_selector"
+                android:textSize="14sp" />
+
+            <com.beastbikes.android.modules.user.filter.other.DrawableCenterTextView
+                android:id="@+id/activity_watermark_gallery_tab_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:text="@string/activity_watermark_tab_sticker"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_sticker"
+                android:textColor="@color/watermark_gallery_activity_tab_bar_item_label_selector"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/activity_watermark_gallery_tab_cursor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/watermark_tab_cursor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#444" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/activity_watermark_gallery_tab_filter"
+                layout="@layout/activity_watermark_gallery_list_watermark"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/activity_watermark_gallery_tab_sticker"
+                layout="@layout/activity_watermark_gallery_list_sticker"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

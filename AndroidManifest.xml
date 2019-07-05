@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.beastbikes.android"
+    android:versionCode="0x90050"
+    android:versionName="2.5.0">
+
+    <!-- ========================== 融云 ====================== -->
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 控制振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- ========================== 融云 ====================== -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- ========================== ShareSDK ====================== -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- ========================== Bluetooth ===================== -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- ========================== BaiduMap ====================== -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".BeastBikes"
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Holo.Beast"
+        tools:ignore="HardcodedDebugMode">
+        <meta-data
+            android:name="DEV_MODE"
+            android:value="tester" />
+
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Holo.Beast.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="speedx" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".authentication.ui.AuthenticationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Holo.Beast.AuthenticationActivity" />
+        <activity
+            android:name=".main.MiuiSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Holo.Transparent.NoActionBar.FullScreen" />
+        <activity
+            android:name=".main.MeiZuSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Holo.Transparent.NoActionBar.FullScreen" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActionBar" />
+        <activity
+            android:name=".widget.multiimageselector.MultiImageSelectorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".modules.preferences.ui.SettingActivity"
+            android:label="@string/setting_fragment_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.setting.ui.LaboratoryActivity"
+            android:label="@string/laboratory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.setting.ui.KeepAliveHelperActivity"
+            android:label="@string/label_cycling_keepalive_suggest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.user.ui.AvatarViewer"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".modules.user.ui.WatermarkCameraActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".modules.user.ui.WatermarkGalleryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".modules.user.ui.WatermarkCropperActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".modules.user.ui.WatermarkFinishedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".modules.user.ui.ProfileActivity"
+            android:label="@string/profile_activity_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfileMenuStyle" />
+        <activity
+            android:name=".modules.user.ui.CyclingRecordActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/activity_record_activity_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Holo.Beast" />
+        <activity
+            android:name=".modules.cycling.activity.ui.MapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".modules.cycling.activity.ui.record.CyclingCompletedActivity"
+            android:label="@string/activity_finished_activity_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="com.beastbikes.intent.action.ACTIVITY_COMPLETE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.user.ui.ActivityComplainActivity"
+            android:label="@string/activity_complain_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.route.ui.RouteSaveByWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".modules.user.ui.PersonalRecordActivity"
+            android:label="@string/personal_record_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.AboutActivity"
+            android:label="@string/about_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.preferences.ui.UserSettingActivity"
+            android:label="@string/user_setting_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.preferences.ui.UserSettingActivityFromAuth"
+            android:label="@string/user_setting_activity_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".modules.preferences.ui.CutAvatarActivity"
+            android:label="@string/cut_avatar_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.preferences.ui.offlineMap.OfflineMapActivity"
+            android:label="@string/offline_map_setting_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.preferences.ui.AccuracySettingActivity"
+            android:label="@string/accuracy_setting_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.preferences.ui.VoiceFeedbackSettingActivity"
+            android:label="@string/voice_feedback_setting_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.preferences.ui.EditTextActivity"
+            android:label="@string/edit_text_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.TutorialActivity"
+            android:label="@string/about_activity_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Holo.Beast.TutorialActivity" />
+        <activity
+            android:name=".modules.cycling.route.ui.RouteActivity"
+            android:label="@string/route_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.route.ui.RoutesActivity"
+            android:label="@string/discovery_fragment_good_route"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.route.ui.RouteCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.route.ui.RouteMapActivity"
+            android:label="@string/route_map_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.route.ui.RouteSelfActivity"
+            android:label="@string/route_self_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.route.ui.RouteElevationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Holo.Transparent.NoActionBar" />
+        <activity
+            android:name=".modules.cycling.route.ui.RoutePlanActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".modules.cycling.route.ui.RouteMapSearchGeoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name=".modules.message.ui.MessageActivity"
+            android:label="@string/message_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".embapi.BrowserActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="beastbikes.com"
+                    android:scheme="app" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.beastbikes.intent.action.VIEW_PUSHDATA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.beastbikes.intent.action.VIEW_PUSHDATA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.preferences.ui.BaseEditTextActivity"
+            android:label="@string/edit_text_activity_title"
+            android:screenOrientation="portrait" />
+
+        <!-- ================================== club ==================== -->
+        <activity
+            android:name=".modules.cycling.club.ui.ClubCreateActivity"
+            android:label="@string/club_create_activity_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubDiscoverActivity"
+            android:label="@string/club_info_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubSearchActivity"
+            android:label="@string/club_search_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubMoreActivity"
+            android:label="@string/activity_club_manager_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Holo.Beast" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubMemberManagerActivity"
+            android:label="@string/activity_member_manager_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ApplyManagerActivity"
+            android:label="@string/activity_club_apply_manager_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubInfoSettingActivity"
+            android:label="@string/activity_club_info_setting_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubMemberRankActivity"
+            android:label="@string/club_member_rank_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubPostNoticeActivity"
+            android:label="@string/club_info_item_club_post_notice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubHistoryNoticeActivity"
+            android:label="@string/club_notice_history"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubFeedPostActivity"
+            android:label="@string/club_post_dynamic"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Holo.Beast"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubFeedInfoActivity"
+            android:label="@string/empty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubFeedImageDetailsActivity"
+            android:label="@string/clubfeed_image_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubGalleryActivity"
+            android:label="@string/user_setting_activity_setting_avatar_gallery"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubFeedDetailsActivity"
+            android:label="@string/clubfeed_image_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Holo.Beast" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubLevelActivity"
+            android:label="@string/clubfeed_level"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Holo.Beast" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubImageDetailsActivity"
+            android:label="@string/clubfeed_image_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ThumbsListActivity"
+            android:label="@string/clubfeed_image_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubUploadImageActivity"
+            android:label="@string/club_upload_image_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubMsgActivity"
+            android:label="@string/message"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubFeedPicUploadActivity"
+            android:label="@string/club_upload_image_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- MapBox -->
+        <service android:name="com.mapbox.mapboxsdk.telemetry.TelemetryService" />
+
+        <activity
+            android:name=".modules.cycling.club.ui.MemberRankingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubRankActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".modules.cycling.activity.ui.CyclingDataActivity"
+            android:label="@string/cycling_data_title"
+            android:screenOrientation="portrait" />
+        <!-- ================================== IM ==================== -->
+        <activity
+            android:name=".modules.social.im.ui.FriendsApplyActivity"
+            android:label="@string/friends_apply_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.social.im.ui.FriendsSearchResultActivity"
+            android:label="@string/friends_search_result_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.social.im.ui.conversation.LocationSelectActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/location_select"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".modules.user.ui.GridExploreActivity"
+            android:label="@string/grid_explore_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.preferences.ui.CyclingSettingActivity"
+            android:label="@string/cycling_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.activity.ui.CyclingSettingPageActivity"
+            android:label="@string/cycling_setting_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.activity.ui.CyclingTargetSettingActivity"
+            android:label="@string/empty"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <!-- Ble -->
+        <activity
+            android:name=".ble.ui.DiscoveryActivity"
+            android:label="@string/empty"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.beastbikes.intent.action.BIND_SPEED_FORCE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ble.ui.DiscoveryResultActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/SpeedForceActivity" />
+        <activity
+            android:name=".ble.ui.NavigationActivity"
+            android:label="@string/label_navigate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".zxing.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Holo.Transparent.NoActionBar.FullScreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <service
+            android:name=".ble.CentralService"
+            android:enabled="true"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="com.beastbikes.android.ble.intent.action.CENTRAL_CONTROL" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+        <service android:name=".modules.cycling.SyncService" />
+        <service android:name=".main.AdvService" />
+        <service
+            android:name=".modules.cycling.activity.biz.ActivityService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.beastbikes.intent.action.ACTIVITY_MANAGER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <!-- ========================== Baidu Map ========================== -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="C2aACIHX1CYUvP3SIsuFBLzh" />
+        <!-- 提示：请不要将自己的百度key提交上去 -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <receiver android:name=".KeepAliveReceiver">
+            <intent-filter android:priority="0x7FFFFFFF">
+                <action android:name="android.media.SCO_AUDIO_STATE_CHANGED" />
+            </intent-filter>
+            <intent-filter android:priority="0x7FFFFFFF">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter android:priority="0x7FFFFFFF">
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+            <intent-filter android:priority="0x7FFFFFFF">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter android:priority="0x7FFFFFFF">
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+            <intent-filter android:priority="0x7FFFFFFF">
+                <action android:name="android.intent.action.SCREEN_OFF" />
+            </intent-filter>
+            <intent-filter android:priority="0x7FFFFFFF">
+                <action android:name="android.intent.action.SCREEN_ON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".update.VersionUpdateReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5639ace4e0f55a6cf4001fc3" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="87bbf458a3015a6bd764352f84c8b484" />
+
+        <!-- ==========================wechat================================ -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- ==========================  twitter  =============================== -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="DdLqllMyHpyj45ohZW7WCZHZK" />
+
+        <!-- ==========================  融云  =============================== -->
+        <!-- 融云push -->
+        <receiver
+            android:name=".modules.social.im.RongPushReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver>
+        <!-- 会话列表 Activity -->
+        <activity
+            android:name=".modules.social.im.ui.conversation.ConversationListStaticActivity"
+            android:label="@string/firends_chat_title"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.beastbikes.android"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!-- 会话 Activity -->
+        <activity
+            android:name=".modules.social.im.ui.conversation.ConversationStaticActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.beastbikes.android"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!-- 会话查看地图 -->
+        <activity
+            android:name=".modules.social.im.ui.conversation.ConversationMapView"
+            android:screenOrientation="portrait" />
+
+        <!-- PhotoActivity -->
+        <activity
+            android:name=".modules.social.im.ui.conversation.PhotoActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- PhotoActivity -->
+        <activity
+            android:name=".modules.social.im.ui.conversation.GroupSettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- begin imlib request -->
+
+        <activity
+            android:name=".modules.user.ui.binding.CountryPageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:process=":ipc" />
+        <service android:name="io.rong.imlib.ReConnectService" />
+
+        <activity
+            android:name="io.rong.imkit.tools.RongWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.widget.provider.TakingPicturesActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="io.rong.push.PushService"
+            android:process="io.rong.push">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.push" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.rong.push.PushReceiver"
+            android:process="io.rong.push">
+            <intent-filter>
+                <action android:name="io.rong.imlib.action.push.heartbeat" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" />
+
+        <!-- =================== Google API ======================= -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC37s5-sXx9mrZJYRuSje9RmJaczmf721k" />
+        <!-- googlemap  debug  AIzaSyAyJdWoCYS3OkRjbgeAry6ZaTyM4lWdYak  release key    AIzaSyAcsrJ7NDT6RRZV-en7jVG3s2TjHGg0-CU -->
+
+        <service
+            android:name=".locale.googlemaputils.FetchAddressIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".modules.cycling.ranking.ui.RankActivity"
+            android:label="@string/ranking_fragment_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubActivityReleaseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/menu_post_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubWriteInforActivity"
+            android:label="@string/club_write_infor_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubActivitiesListActivity"
+            android:label="@string/club_activity_list_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubActivityManagerActivity"
+            android:label="@string/club_activity_manage_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubActUserListActivity"
+            android:label="@string/club_activity_user_list_tittle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.user.ui.binding.AccountManagementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.user.ui.binding.BoundPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.user.ui.binding.SetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.user.ui.binding.BindMailBoxActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- ========================== ShareSDK ====================== -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.user.ui.binding.BandingSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".authentication.ui.FindPassWordActivity"
+            android:label="@string/activity_find_pass_word"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".authentication.ui.FindPasswordSuccessActivity"
+            android:label="@string/activity_find_pass_word"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.AdvertiseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Holo.Beast.SplashActivity" />
+        <activity
+            android:name=".ble.ui.StartNavigationActivity"
+            android:screenOrientation="portrait" />
+        <!-- Facebook -->
+        <activity
+            android:name=".modules.cycling.club.ui.ClubActInfoEditorActivity"
+            android:label="@string/club_act_info_str"
+            android:screenOrientation="portrait" />
+
+        <!-- Facebook -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1521430224854105"
+            android:exported="true" />
+
+        <activity
+            android:name=".ble.ui.SearchLocationActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".ble.otadownload.OTADownLoadService"
+            android:exported="false" />
+
+        <activity
+            android:name=".modules.cycling.club.ui.ClubCutBitmapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubActivityInfoBrowserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubActRouteSelfActivity"
+            android:label="@string/route_self_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.sections.ui.CompetitionSectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActionBar" />
+        <activity
+            android:name=".modules.cycling.sections.ui.SectionFiltersActivity"
+            android:label="@string/filter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.sections.ui.SectionDetailActivity"
+            android:label="@string/speedx_section_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.sections.ui.FavorSegmentActivity"
+            android:label="@string/profile_fragment_detailed_item_my_favorites"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.sections.ui.RecordSegmentActivity"
+            android:label="@string/record_segment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.shop.ui.BikeShopMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActionBar" />
+        <activity
+            android:name=".modules.shop.ui.BikeShopListActivity"
+            android:label="@string/discovery_fragment_store"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".modules.shop.ui.BikeShopDetailActivity"
+            android:label="@string/shop_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfileMenuStyle" />
+        <activity
+            android:name=".modules.user.ui.FansActivity"
+            android:label="@string/profile_fragment_follower"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.user.ui.FollowActivity"
+            android:label="@string/profile_fragment_follow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.user.ui.FollowSearchResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.cycling.activity.ui.CyclingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".modules.cycling.club.ui.ClubTransferActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.user.ui.FeedBackActivity"
+            android:label="@string/feedback_issue_ack"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- ========================== MultiImageSelector ====================== -->
+        <activity
+            android:name=".widget.multiimageselector.LookImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".modules.user.ui.MedalsActivity"
+            android:label="@string/empty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.user.ui.MedalInfoActivity"
+            android:label="@string/empty"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+
+        <!-- JPUSH User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.beastbikes.android" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="fd2370dacc7c25531ed9c55a" /> <!-- </>值来自开发者平台取得的AppKey -->
+
+        <activity
+            android:name=".ble.ui.SpeedXOtaVersionActivity"
+            android:label="@string/label_version_update"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ble.ui.SpeedXGpsUpdateActivity"
+            android:label="@string/label_ble_gps_update"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".update.ui.VersionUpdateActivity"
+            android:label="@string/label_app_version_update"
+            android:screenOrientation="portrait" />
+
+        <!-- Ping++ SDK -->
+        <activity
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信支付 -->
+        <activity-alias
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.pingplusplus.android.PaymentActivity" />
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <!-- Ping++ SDK END -->
+        <activity
+            android:name=".ble.ui.SpeedForceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SpeedForceActivity" />
+        <activity
+            android:name=".ble.ui.SpeedXSettingActivity"
+            android:label="@string/label_bike_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.strava.ui.StravaAuthWebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.preferences.ui.ServiceManagerActivity"
+            android:label="@string/label_service_manager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ble.ui.SpeedXCadenceSettingActivity"
+            android:label="@string/label_cadence_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ble.ui.SpeedXHeartRateSettingActivity"
+            android:label="@string/label_speedx_max_heart_rate_setting"
+            android:screenOrientation="portrait" />
+        <activity android:name=".modules.cycling.activity.ui.record.RecordDataCompareActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/activity_data_compare_activity_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Holo.Beast"
+            />
+    </application>
+
+</manifest>

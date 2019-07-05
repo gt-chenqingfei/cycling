@@ -1,0 +1,61 @@
+<com.beastbikes.android.widget.slidingup_pannel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/record_drag_view"
+    sothree:umanoOverlay="true"
+    sothree:umanoScrollableView="@+id/record_sticky_list">
+
+    <!-- MAIN CONTENT -->
+    <FrameLayout
+        android:id="@+id/record_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <com.beastbikes.android.modules.map.SpeedxMap
+            android:id="@+id/record_map_speedx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.beastbikes.android.modules.cycling.activity.ui.record.RecordSideBar
+            android:id="@+id/record_side_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom" />
+
+        <com.beastbikes.android.modules.cycling.activity.ui.record.RecordActionBar
+            android:id="@+id/record_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </FrameLayout>
+
+    <!-- SLIDING LAYOUT -->
+    <FrameLayout
+        android:id="@+id/record_drag_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <com.beastbikes.android.widget.stickylistlibrary.stickylistheaders.StickyListHeadersListView
+            android:id="@+id/record_sticky_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:drawSelectorOnTop="true"
+            android:scrollbars="none"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/record_share_view"
+            android:visibility="invisible"/>
+
+
+    </FrameLayout>
+</com.beastbikes.android.widget.slidingup_pannel.SlidingUpPanelLayout>

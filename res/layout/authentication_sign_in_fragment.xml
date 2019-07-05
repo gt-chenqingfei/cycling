@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|top"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="12dp"
+        android:padding="0dp">
+
+        <EditText
+            android:id="@+id/authentication_sign_in_fragment_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/transparent"
+            android:drawableLeft="@drawable/ic_auth_user"
+            android:drawableRight="@drawable/ic_auth_cencel"
+            android:drawablePadding="8dp"
+            android:hint="@string/authentication_sign_in_fragment_hint"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/bg_border_line_color_trans" />
+
+        <EditText
+            android:id="@+id/authentication_sign_in_fragment_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:maxLength="16"
+            android:background="@drawable/transparent"
+            android:drawableLeft="@drawable/ic_pwd"
+            android:drawablePadding="8dp"
+            android:hint="@string/authentication_password_is_required"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/bg_border_line_color_trans" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/authentication_sign_in_fragment_forget_password_fl"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/authentication_sign_in_fragment_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/authentication_sign_in_fragment_forget_password"
+            android:textColor="@color/text_selector"
+            android:textSize="12sp" />
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/authentication_sign_in_fragment_button_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="@dimen/authentication_sign_in_fragment_button_margin"
+        android:background="@drawable/border_1px_solid_b9b9b9_width_radius_5dp"
+        android:gravity="center"
+        android:text="@string/authentication_sign_in_fragment_sign_in"
+        android:textColor="#b2ffffff" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="53dp"
+    >
+
+    <Button
+        android:id="@+id/activity_medal_info_push_bottom_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_transparent_with_red_border_and_radius"
+        android:text="@string/str_go_to_get_prize"
+        android:textColor="@color/color_medal_push_dialog_bottom_red"
+        android:textSize="@dimen/font_14"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        />
+
+
+    <TextView
+        android:id="@+id/activity_medal_info_push_additional_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/activity_medal_info_push_bottom_btn"
+        android:text="@string/str_additional_get"
+        android:layout_marginBottom="5dp"
+        android:textColor="#999999"
+        android:textSize="@dimen/font_11"
+        />
+
+    <TextView
+        android:id="@+id/activity_medal_info_push_active_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/activity_medal_info_push_additional_get"
+        android:text="@string/str_medal_active_success"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_12"
+        />
+
+    <TextView
+        android:id="@+id/activity_medal_info_push_medal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/activity_medal_info_push_active_success"
+        tools:text="红色烈焰勋章"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_20"
+        />
+</RelativeLayout>

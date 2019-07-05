@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/authentication_fadeimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        android:src="@drawable/authentication_111111_000000_bg" />
+
+    <ImageView
+        android:id="@+id/user_setting_activity_from_auth_blur_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg_black_color"
+        android:scaleType="centerCrop"
+        android:src="@drawable/authentication_bg" />
+
+    <FrameLayout
+        android:id="@+id/user_setting_activity_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.beastbikes.android.modules.map.SpeedxMap
+            android:id="@+id/localtion_selsect_activity_mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/route_map_make_select_point_view"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:paddingBottom="40dp"
+            android:paddingLeft="70dp">
+
+            <TextView
+                android:id="@+id/route_map_make_select_start_point"
+                android:layout_width="60dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="22dp"
+                android:background="@drawable/route_map_make_select_point_bg"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="@string/route_map_make_activity_select_start_point"
+                android:textColor="@color/route_self_use"
+                android:textSize="@dimen/font_11" />
+
+            <ImageView
+                android:id="@+id/midiv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/route_map_make_select_icon" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/localtion_selsect_activity_button_location"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/ic_map_location" />
+
+        <FrameLayout
+            android:id="@+id/localtion_selsect_activity_make_zomm"
+            android:layout_width="35dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/route_map_make_search_bg" />
+
+            <LinearLayout
+                android:id="@+id/route_map_make_zoom_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/localtion_selsect_activity_button_zoom_out"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_map_zoom_out" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="#dddddd" />
+
+                <ImageView
+                    android:id="@+id/localtion_selsect_activity_button_zoom_in"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_map_zoom_in" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/location_route_map_make_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_shadow"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/location_route_map_make_back"
+            android:layout_width="44dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/ic_new_back_icon" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#9C9C9C"></View>
+
+        <TextView
+            android:id="@+id/route_map_search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:text="@string/route_map_search_edittext_hint"
+            android:textColor="@color/activity_fragment_tab_bar_item_label_default"
+            android:textSize="@dimen/font_15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/route_map_make_point_list"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/localtion_selsect_activity_pb"
+            style="@android:attr/progressBarStyleLarge"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/localtion_selsect_activity_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+</RelativeLayout>

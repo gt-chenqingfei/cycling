@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/window_background"
+    android:minHeight="80dp">
+
+    <LinearLayout
+        android:id="@+id/item_competition_section_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="44.5dp"
+            android:layout_toLeftOf="@+id/item_competition_section_right"
+            android:background="@color/club_rank_listview_diver_color"></View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_competition_section_total_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="1111"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/item_competition_section_total_distance_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="222"
+                android:textColor="@color/club_rank_listview_diver_color"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.beastbikes.framework.ui.android.widget.CircleImageView
+        android:id="@+id/item_competition_section_avater"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="22.5dp"
+        android:src="@drawable/ic_launch_logo" />
+
+    <TextView
+        android:id="@+id/item_competition_section_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/item_competition_section_right"
+        android:layout_toRightOf="@+id/item_competition_section_avater"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="妙峰山路段"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/item_competition_section_diatance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_competition_section_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3.5dp"
+        android:layout_toRightOf="@+id/item_competition_section_avater"
+        android:text="距离小于30m"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/item_competition_section_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_competition_section_diatance"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/item_competition_section_diatance"
+        android:text="Jack占领"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:id="@+id/section_rating_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_competition_section_diatance"
+        android:layout_below="@+id/item_competition_section_diatance"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/item_competition_section_avater">
+
+        <RatingBar
+            android:id="@+id/section_ratingbar"
+            style="@style/sectionRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:numStars="5"
+            android:rating="0"></RatingBar>
+
+        <TextView
+            android:id="@+id/section_elevation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/section_ratingbar"
+            android:text="1121212"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/item_competition_section_diver"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="92.5dp"
+        android:background="@color/item_competition_section_diver"></View>
+
+</RelativeLayout>

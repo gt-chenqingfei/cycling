@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/club_info_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_club_bg"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:paddingTop="20dp">
+
+            <com.beastbikes.android.modules.cycling.club.ui.widget.MyViewPager
+                android:id="@+id/pager_banner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:id="@+id/club_feed_info_type_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/club_feed_info_type"
+                    android:layout_width="43dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="24dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <com.beastbikes.android.widget.PageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="bottom|center_horizontal"
+            app:indicator_spacing="5dp"
+            app:indicator_type="circle" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/club_info_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:drawableRight="@drawable/ic_divider_line"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#b4b4b4"
+                android:textSize="@dimen/font_13" />
+
+            <TextView
+                android:id="@+id/club_info_total_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#b4b4b4"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/club_info_member_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:drawableLeft="@drawable/ic_divider_line"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#b4b4b4"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

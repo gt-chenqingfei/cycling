@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_fragment_detail_items"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_black_color"
+    android:orientation="vertical"
+    android:paddingLeft="13dp">
+
+    <include
+        android:id="@+id/profile_fragment_detail_item_club"
+        layout="@layout/profile_fragment_statistic"
+        android:layout_width="match_parent"
+        android:layout_height="67.5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="42dp"
+        android:background="@color/splitlinecolor" />
+
+    <include
+        android:id="@+id/profile_fragment_detail_item_activities"
+        layout="@layout/profile_fragment_statistic"
+        android:layout_width="match_parent"
+        android:layout_height="67.5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="42dp"
+        android:background="@color/splitlinecolor" />
+
+
+    <include
+        android:id="@+id/profile_fragment_detail_item_route_favorites"
+        layout="@layout/profile_fragment_statistic"
+        android:layout_width="match_parent"
+        android:layout_height="67.5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="42dp"
+        android:background="@color/splitlinecolor" />
+
+    <include
+        android:id="@+id/profile_fragment_detail_item_speedforce"
+        layout="@layout/profile_fragment_statistic"
+        android:layout_width="match_parent"
+        android:layout_height="67.5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="42dp"
+        android:background="@color/splitlinecolor" />
+
+    <include
+        android:id="@+id/profile_fragment_detail_item_route_book"
+        layout="@layout/profile_fragment_statistic"
+        android:layout_width="match_parent"
+        android:layout_height="67.5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="42dp"
+        android:background="@color/splitlinecolor" />
+
+    <include
+        android:id="@+id/profile_fragment_detail_item_grid"
+        layout="@layout/profile_fragment_statistic"
+        android:layout_width="match_parent"
+        android:layout_height="67.5dp" />
+
+
+</LinearLayout>

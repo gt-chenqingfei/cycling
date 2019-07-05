@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CutAvatarActivity">
+
+    <com.beastbikes.android.modules.preferences.ui.ImageCut
+        android:id="@+id/cut_avatar_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.beastbikes.android.modules.preferences.ui.ImageCut>
+
+    <Button
+        android:id="@+id/cut_avatar_btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/label_sure" />
+
+    <Button
+        android:id="@+id/cut_avatar_btn_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/cut_avatar_activity_btn_cancel" />
+
+</RelativeLayout>

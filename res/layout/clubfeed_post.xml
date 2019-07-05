@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clubfeed_post"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#1b1b1b"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp">
+
+    <EditText
+        android:id="@+id/et_clubfeed_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:maxLength="70"
+        android:textColorHint="@color/text_light_color"
+        android:textColor="@color/text_number_color"
+        android:maxLines="4" />
+
+    <Button
+        android:id="@+id/btn_clubfeed_send"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/transparent"
+        android:text="@string/rc_input_send"
+        android:textColor="#ea3232" />
+</LinearLayout>

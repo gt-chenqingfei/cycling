@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/histogram_view_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="@string/label_every_month_distance"
+                android:textColor="@color/text_white_color"
+                android:textSize="@dimen/font_13" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/label_profile_rank_msg"
+                    android:textColor="@color/text_white_color"
+                    android:textSize="@dimen/font_13" />
+
+                <TextView
+                    android:id="@+id/histogram_view_rank_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:gravity="center_vertical"
+                    android:text="－－"
+                    android:textColor="@color/designcolor_c7"
+                    android:textSize="@dimen/font_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/club_rank_rank_desc"
+                    android:textColor="@color/text_white_color"
+                    android:textSize="@dimen/font_13" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@color/bg_border_line_color" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/histogram_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:overScrollMode="never" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/histogram_view_distance_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="46dp"
+                    android:background="@drawable/bg_histogram_view_distance"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_histogram_view_distance_icon" />
+
+                    <TextView
+                        android:id="@+id/histogram_view_distance_tv"
+                        android:layout_width="wrap_content"
+                        android:minWidth="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center"
+                        android:text="0.0"
+                        android:textColor="@color/designcolor_c7"
+                        android:textSize="@dimen/font_13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="12dp"
+                        android:gravity="center"
+                        android:text="@string/kilometre"
+                        android:textColor="@color/designcolor_c7"
+                        android:textSize="@dimen/font_10" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/histogram_view_point_view"
+                    android:layout_width="1px"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/histogram_view_point_line"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

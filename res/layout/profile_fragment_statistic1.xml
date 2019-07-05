@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:background="@drawable/bg_profile_fragment_gradual_change"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/profile_fragment_follower_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/profile_fragment_statistic_item_fans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/designcolor_c7"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/profile_fragment_follow"
+            android:textColor="@color/text_white_color"
+            android:textSize="@dimen/font_11" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="0"
+        android:background="#222" />
+
+    <FrameLayout
+        android:id="@+id/profile_fragment_fans_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_fragment_statistic_item_follower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/designcolor_c7"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/profile_fragment_statistic_item_value1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/profile_fragment_follower"
+                android:textColor="@color/text_white_color"
+                android:textSize="@dimen/font_11" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/dot_follower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_oval"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_10"
+            android:visibility="gone"
+             />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="0"
+        android:background="#222" />
+
+    <LinearLayout
+        android:id="@+id/profile_fragment_medal_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/profile_fragment_statistic_item_medal_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/designcolor_c7"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/profile_fragment_statistic_item_medal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/profile_fragment_medal"
+            android:textColor="@color/text_white_color"
+            android:textSize="@dimen/font_11" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="0"
+        android:background="#222" />
+
+    <FrameLayout
+        android:id="@+id/profile_fragment_friend_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/border_0_5_px_solid_b9b9b9_width_radius_5dp"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:id="@+id/profile_fragment_friend_btn_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/profile_fragment_friend_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/profile_fragment_friend_btn_icon"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/friends_add_friend"
+                android:textColor="@color/text_default"
+                android:textSize="@dimen/font_12" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/profile_fragment_message_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_oval"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_10"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+
+</LinearLayout>

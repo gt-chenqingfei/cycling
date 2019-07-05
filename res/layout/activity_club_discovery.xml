@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.modules.cycling.club.ui.widget.MyFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/club_feed_frag_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/discover_color3"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/club_discover_apply_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:background="#e34848"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_club_apply"
+                android:drawablePadding="10dp"
+                android:text="@string/club_activity_apply_tip"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="14dp"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/ic_arrow_right" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/searchbarLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <View
+                android:id="@+id/clubtabmidview"
+                android:layout_width="0.1dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"></View>
+
+            <TextView
+                android:id="@+id/recommend_tab"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/clubtabmidview"
+                android:background="@drawable/selector_discoverclubtab_bg"
+                android:gravity="center"
+                android:text="@string/discover_recommend"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/nearby_tab"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/clubtabmidview"
+                android:background="@drawable/selector_discoverclubtab_bg"
+                android:gravity="center"
+                android:text="@string/club_discover_group_city"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/frag_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/discover_color3"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</com.beastbikes.android.modules.cycling.club.ui.widget.MyFrameLayout>

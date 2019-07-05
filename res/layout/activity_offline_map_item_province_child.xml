@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f3f3f3"
+    android:orientation="vertical">
+
+    <!-- 如果根布局不是LinearLayout会出现问题，不知为何 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:minHeight="50dp">
+
+        <TextView
+            android:id="@+id/offlinemap_fragment_city_list_tvCityname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:text="北京"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/offlinemap_fragment_city_list_tvSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/offlinemap_fragment_city_list_tvCityname"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:text="30M"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <!-- <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/offlinemap_fragment_city_list_tvDownload"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/offlinemap_fragment_city_list_tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="(暂停)"
+                android:textColor="#444444"
+                android:textSize="12sp" />
+
+            <ProgressBar
+                android:id="@+id/offlinemap_fragment_city_list_pbDownloadStatus"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="6dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:max="100"
+                android:progressDrawable="@drawable/barcolor" />
+            
+        </LinearLayout>  -->
+
+        <TextView
+            android:id="@+id/offlinemap_fragment_city_list_tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_toLeftOf="@+id/offlinemap_fragment_city_list_tvDownload"
+            android:text="@string/activity_offline_label_pause"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/offlinemap_fragment_city_list_tvDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/textview_border"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/offline_map_setting_activity_download"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:paddingLeft="12dp"
+        android:background="#c8c7cc" />
+
+</LinearLayout>

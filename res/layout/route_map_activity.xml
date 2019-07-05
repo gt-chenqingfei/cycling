@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/route_map_activity_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/route_map_activity_map_button_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@string/empty"
+        android:src="@drawable/ic_map_location" />
+
+    <ImageView
+        android:id="@+id/route_map_activity_elevation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/route_map_activity_map_button_location"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/empty"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_map_zoom_elevation"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/route_map_make_zoom"
+        android:layout_width="39dp"
+        android:layout_height="92dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/route_map_make_search_bg" />
+
+        <LinearLayout
+            android:id="@+id/route_map_make_zoom_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="#dddddd" />
+
+            <ImageView
+                android:id="@+id/route_map_activity_map_button_zoom_out"
+                android:layout_width="39dp"
+                android:layout_height="46dp"
+                android:contentDescription="@string/empty"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_zoom_out" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="#dddddd" />
+
+            <ImageView
+                android:id="@+id/route_map_activity_map_button_zoom_in"
+                android:layout_width="39dp"
+                android:layout_height="46dp"
+                android:contentDescription="@string/empty"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_map_zoom_in" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

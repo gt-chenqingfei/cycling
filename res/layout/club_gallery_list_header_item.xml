@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#222">
+
+    <LinearLayout
+        android:id="@+id/club_gallery_header_date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/club_gallery_list_heard_item_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015"
+            android:textColor="#757575"
+            android:textSize="@dimen/font_11" />
+
+        <TextView
+            android:id="@+id/club_gallery_list_heard_item_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_club_gallery_select_date_icon"
+            android:text="3月"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/club_gallery_list_heard_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#777777"
+        android:textSize="@dimen/font_13" />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_speedx_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/speed_force_setting_language"
+            layout="@layout/speed_force_setting_item"
+            android:layout_width="match_parent"
+            android:layout_height="46dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="18dp"
+            android:background="#ebebeb" />
+
+        <include
+            android:id="@+id/speed_force_setting_mileage_unit"
+            layout="@layout/speed_force_setting_item"
+            android:layout_width="match_parent"
+            android:layout_height="46dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="18dp"
+            android:background="#ebebeb" />
+
+        <include
+            android:id="@+id/speed_force_setting_cadence"
+            layout="@layout/speed_force_setting_item"
+            android:layout_width="match_parent"
+            android:layout_height="46dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="18dp"
+            android:background="#ebebeb" />
+
+        <include
+            android:id="@+id/speed_force_setting_heart_rate"
+            layout="@layout/speed_force_setting_item"
+            android:layout_width="match_parent"
+            android:layout_height="46dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="18dp"
+            android:background="#ebebeb" />
+
+        <include
+            android:id="@+id/speed_force_setting_diameter"
+            layout="@layout/speed_force_setting_item"
+            android:layout_width="match_parent"
+            android:layout_height="46dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="18dp"
+            android:background="#ebebeb" />
+
+        <include
+            android:id="@+id/speed_force_setting_message"
+            layout="@layout/speed_force_setting_switch_item"
+            android:layout_width="match_parent"
+            android:layout_height="46dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="18dp"
+            android:background="#ebebeb" />
+
+        <include
+            android:id="@+id/speed_force_setting_vibration_wake"
+            layout="@layout/speed_force_setting_switch_item"
+            android:layout_width="match_parent"
+            android:layout_height="46dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

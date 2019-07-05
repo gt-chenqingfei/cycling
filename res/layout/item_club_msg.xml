@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/item_club_msg"
+    android:layout_height="match_parent"
+    android:background="@color/discover_color3">
+
+    <com.beastbikes.framework.ui.android.widget.CircleImageView
+        android:id="@+id/club_msg_list_item_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:contentDescription="@string/empty"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_avatar"
+        app:borderColor="@color/discover_color3"
+        app:borderWidth="0dp" />
+
+    <TextView
+        android:id="@+id/club_msg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/club_msg_list_item_avatar"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/club_msg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/club_msg_name"
+        android:layout_below="@+id/club_msg_name"
+        android:layout_marginTop="4.5dp"
+        android:textColor="#666666"
+        android:textSize="11sp" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rightrl"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/thumbnailIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/rightTV"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:ellipsize="end"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/club_msg_name"
+        android:layout_below="@+id/club_msg_time"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/rightrl"
+        android:textColor="@color/club_msg_pinkishGrey"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="16dp"
+        android:background="@color/discover_color1"></View>
+
+</RelativeLayout>

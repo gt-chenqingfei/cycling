@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bike_shop_frag_search_container"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/bike_shop_tab_container"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_bike_shop_tab"
+        >
+        <TextView
+            android:id="@+id/bike_shop_tab_all"
+            android:background="@drawable/selector_bike_shop_tab_left"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/bike_shop_tab_all"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+        <TextView
+            android:id="@+id/bike_shop_tab_mine"
+            android:background="@drawable/selector_bike_shop_tab_right"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/bike_shop_tab_mine"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/bike_shop_list_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

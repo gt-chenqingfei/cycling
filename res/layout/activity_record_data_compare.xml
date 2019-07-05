@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_record_data_compare"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    tools:context="com.beastbikes.android.modules.cycling.activity.ui.record.RecordDataCompareActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/HorizontalWeightLinear">
+
+            <CheckedTextView
+                android:id="@+id/checked_tv_speed"
+                style="@style/ChartDataCompareCheckedTV"
+                android:checked="true"
+                android:text="@string/voice_feedback_setting_activity_label_velocity" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/HorizontalWeightLinear">
+
+            <CheckedTextView
+                android:id="@+id/checked_tv_slope"
+                style="@style/ChartDataCompareCheckedTV"
+                android:checked="true"
+                android:text="@string/str_slope" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/HorizontalWeightLinear">
+
+            <CheckedTextView
+                android:id="@+id/checked_tv_heart_rate"
+                style="@style/ChartDataCompareCheckedTV"
+                android:checked="true"
+                android:text="@string/str_heart_rate" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/HorizontalWeightLinear">
+
+            <CheckedTextView
+                android:id="@+id/checked_tv_cadence"
+                style="@style/ChartDataCompareCheckedTV"
+                android:checked="true"
+                android:text="@string/label_cadence" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_temp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relative_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="67.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#242424"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear_left_temp"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.beastbikes.android.widget.NumberTextView
+                        android:id="@+id/tv_chart_data_compare_bottom_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        tools:text="20.5" />
+
+                    <TextView
+                        android:id="@+id/tv_chart_data_compare_bottom_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4.5dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_11"
+                        tools:text="km" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#282828"
+                    android:layout_toRightOf="@id/linear_left_temp"
+                    />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#1f1f1f"
+                    android:layout_toRightOf="@id/view1"
+                    android:layout_toLeftOf="@+id/view3"
+                    android:layout_centerVertical="true"
+                    />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#282828"
+                    android:layout_marginRight="25dp"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/relative_bottom"
+                android:orientation="vertical">
+
+                <com.beastbikes.android.modules.cycling.activity.ui.record.widget.ChartDataCompareItemView
+                    android:id="@+id/chart_data_compare_speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:chartDataLineColor="#2ecc71"
+                    app:valueDrawable="@drawable/ic_chart_speed" />
+
+                <com.beastbikes.android.modules.cycling.activity.ui.record.widget.ChartDataCompareItemView
+                    android:id="@+id/chart_data_compare_slope"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:chartDataLineColor="#979797"
+                    app:valueDrawable="@drawable/ic_chart_slope_angle" />
+
+                <com.beastbikes.android.modules.cycling.activity.ui.record.widget.ChartDataCompareItemView
+                    android:id="@+id/chart_data_compare_heart_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:chartDataLineColor="#d62424"
+                    app:valueDrawable="@drawable/ic_chart_heart_rate" />
+
+                <com.beastbikes.android.modules.cycling.activity.ui.record.widget.ChartDataCompareItemView
+                    android:id="@+id/chart_data_compare_cadence"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:chartDataLineColor="#2ea0cc"
+                    app:valueDrawable="@drawable/ic_chart_cadence" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seekBar_record_data_compare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:progressDrawable="@drawable/bg_progress_drawable"
+                android:thumb="@drawable/bg_progress_thumb"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16.5dp"
+                android:thumbOffset="16dp"
+                />
+
+            <com.beastbikes.android.modules.cycling.activity.ui.record.widget.CustomVerticalLineView
+                android:id="@+id/custom_vertical_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="69dp"
+                android:layout_marginRight="21dp"
+                android:layout_above="@id/seekBar_record_data_compare"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</RelativeLayout>

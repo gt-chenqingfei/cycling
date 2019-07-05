@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/activity_record_unsync_rela"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#e05757"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/activity_record_unsync_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_default"
+                android:textSize="@dimen/font_12" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/ic_activity_finished_cheat_right" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_record_list_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_bg_color"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_record_activity_tv_norecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="20dp"
+        android:drawableTop="@drawable/ic_no_cycling_record"
+        android:gravity="center"
+        android:text="@string/activity_record_activity_no_record"
+        android:textColor="#848586"
+        android:textSize="@dimen/font_14"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

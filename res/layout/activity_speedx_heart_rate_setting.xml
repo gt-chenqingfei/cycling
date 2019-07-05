@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_speedx_heart_rate_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heart_rate_setting_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="60sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="@string/label_heart_rate_desc_and_unit"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_14" />
+
+        <Button
+            android:id="@+id/heart_rate_setting_btn"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_heart_rate_customize_corners_black"
+            android:text="@string/label_heart_rate_customize"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="#f6f6f6"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/label_heart_rate_interval"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_14" />
+
+        <com.beastbikes.android.ble.ui.widget.HeartRateIntervalItemView
+            android:id="@+id/heart_rate_recovery_area_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:interval_background_color="#f6a09a"
+            app:interval_label="@string/label_heart_rate_recovery_area" />
+
+        <com.beastbikes.android.ble.ui.widget.HeartRateIntervalItemView
+            android:id="@+id/heart_rate_burning_fat_area_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:interval_background_color="#f06c63"
+            app:interval_label="@string/label_heart_rate_burning_fat_area" />
+
+        <com.beastbikes.android.ble.ui.widget.HeartRateIntervalItemView
+            android:id="@+id/heart_rate_target_area_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:interval_background_color="#e8372d"
+            app:interval_label="@string/label_heart_rate_train_area" />
+
+        <com.beastbikes.android.ble.ui.widget.HeartRateIntervalItemView
+            android:id="@+id/heart_rate_anaerobic_area_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:interval_background_color="#c91c03"
+            app:interval_label="@string/label_heart_rate_anaerobic_area" />
+
+        <com.beastbikes.android.ble.ui.widget.HeartRateIntervalItemView
+            android:id="@+id/heart_rate_limit_area_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:interval_background_color="#931506"
+            app:interval_label="@string/label_heart_rate_limit_area" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|top"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <EditText
+            android:id="@+id/authentication_sign_up_fragment_username1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_auth_user"
+            android:drawablePadding="8dp"
+            android:hint="@string/authentication_sign_up_fragment_nickname"
+            android:inputType="textEmailAddress"
+            android:maxEms="12"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bg_border_line_color_trans"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sign_phone" />
+
+                <TextView
+                    android:id="@+id/authentication_sign_up_fragment_zone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+86"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="30dp"
+                    android:background="@color/home_activity_tab_bar_item_label_default" />
+
+                <EditText
+                    android:id="@+id/authentication_sign_up_fragment_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="12dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/club_phone"
+                    android:inputType="number"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/bg_border_line_color_trans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/authentication_sign_up_fragment_valid"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_valid"
+                android:drawablePadding="8dp"
+                android:hint="@string/activity_bound_phone_verification_str"
+                android:inputType="number"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_14"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/authentication_send_valid"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/border_0_5_px_solid_b9b9b9_width_radius_5dp"
+                android:gravity="center"
+                android:text="@string/authentication_send_valid"
+                android:textColor="#b2ffffff"
+                />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bg_border_line_color_trans" />
+
+        <EditText
+            android:id="@+id/authentication_sign_up_fragment_password1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_pwd"
+            android:drawablePadding="8dp"
+            android:hint="@string/authentication_sign_up_fragment_password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bg_border_line_color_trans" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/authentication_sign_up_fragment_button_sign_up1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="@dimen/authentication_sign_in_fragment_button_margin"
+        android:background="@drawable/border_1px_solid_b9b9b9_width_radius_5dp"
+        android:gravity="center"
+        android:text="@string/authentication_sign_up_fragment_sign_up"
+        android:textColor="#b2ffffff" />
+
+</LinearLayout>

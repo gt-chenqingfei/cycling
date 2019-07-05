@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="98dp"
+    android:layout_height="98dp"
+    android:clickable="true"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/activity_watermark_gallery_lv_item_sticker_sticker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/activity_watermark_gallery_lv_item_sticker_bar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/sticker_bar_selector"
+        android:contentDescription="@string/empty"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>

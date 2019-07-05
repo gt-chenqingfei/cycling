@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp"
+    android:background="@color/bg_black_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_favor_segment_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:minWidth="56dp">
+
+        <TextView
+            android:id="@+id/item_favor_segment_rank_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_favor_segment_rank1"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/item_favor_segment_left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_favor_segment_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="妙峰山路段"
+            android:textColor="@color/text_default"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_favor_segment_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="40.1km-02:23:23-23.2km/h"
+            android:textColor="@color/activity_finished_detail_activity_name_text_color"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrow_right" />
+
+</RelativeLayout>

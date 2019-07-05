@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black_color">
+
+    <ImageView
+        android:id="@+id/authentication_blurimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/authentication_bg" />
+
+    <ImageView
+        android:id="@+id/authentication_fadeimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/authentication_111111_000000_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/authentication_activity_form_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0"
+            android:clickable="true"
+            android:padding="8dp"
+            android:text="@string/authentication_sign_up_fragment_already_have_an_account"
+            android:textColor="@color/text_selector"
+            android:textSize="@dimen/font_12" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <include
+                android:id="@+id/authentication_activity_sign_up_by_email"
+                layout="@layout/authentication_sign_up_by_email_fragment"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/authentication_activity_sign_up_by_phone"
+                layout="@layout/authentication_sign_up_by_phone_fragment"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/authentication_activity_sign_in_form"
+                layout="@layout/authentication_sign_in_fragment" />
+
+            <include
+                android:id="@+id/authentication_activity_sigin_up_switch_fragment"
+                layout="@layout/authentication_sign_switch_fragment"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/authentication_sign_up_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:text="@string/authentication_sign_up_fragment_sign_up"
+                android:textColor="@color/designcolor_c7" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.2"
+                    android:background="@color/feedback_activity_back_background" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/authentication_sign_by_other"
+                    android:textColor="@color/text_number_color" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.2"
+                    android:background="@color/feedback_activity_back_background" />
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/authentication_activity_viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/more_platform"
+            android:textColor="@color/warmGreyTwo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/authentication_activity_bottom_view1"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_authentication_point_selector" />
+
+            <TextView
+                android:id="@+id/authentication_activity_bottom_view2"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bg_authentication_point_selector" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_weight="0"
+            android:text="@string/authentication_copyright"
+            android:textColor="@color/authentication_activity_copyright"
+            android:textSize="@dimen/font_12"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</FrameLayout>

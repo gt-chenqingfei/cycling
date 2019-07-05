@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black_color">
+
+    <View
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:background="@color/common_bg_color"
+        android:layout_height="15.5dp"></View>
+
+    <ImageView
+        android:id="@+id/notice_history_icon"
+        android:layout_below="@+id/topview"
+        android:layout_width="18dp"
+        android:layout_height="15dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_club_manager_history" />
+
+    <TextView
+        android:id="@+id/notice_history_tv"
+        android:layout_below="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="12.5dp"
+        android:layout_toRightOf="@+id/notice_history_icon"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/notice_history_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/notice_history_tv"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="12.5dp"
+        android:textColor="#777777"
+        android:textSize="11sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/notice_history_time_tv"></View>
+
+
+</RelativeLayout>

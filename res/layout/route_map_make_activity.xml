@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/route_map_make_activity_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:id="@+id/route_map_make_select_point_view"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="56dp">
+
+                    <Button
+                        android:id="@+id/route_map_make_select_start_point"
+                        android:layout_width="60dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/route_map_make_select_start_point_bg"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:text="@string/route_map_make_activity_select_start_point"
+                        android:textColor="#87d536"
+                        android:textSize="@dimen/font_11" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/empty"
+                        android:src="@drawable/route_map_make_start_icon" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/route_map_make_select_point_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-35dp"
+                    android:contentDescription="@string/empty"
+                    android:paddingLeft="3dp"
+                    android:src="@drawable/route_map_make_icon_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/route_map_make_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/empty"
+                        android:src="@drawable/route_map_make_back" />
+
+                    <LinearLayout
+                        android:id="@+id/route_map_make_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="13dp"
+                        android:background="@drawable/route_map_make_search_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:contentDescription="@string/empty"
+                            android:src="@drawable/route_map_make_search" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/route_map_make_activity_map_button_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:contentDescription="@string/empty"
+                    android:src="@drawable/ic_map_location" />
+
+                <FrameLayout
+                    android:id="@+id/route_map_make_zoom"
+                    android:layout_width="39dp"
+                    android:layout_height="92dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/route_map_make_search_bg" />
+
+                    <LinearLayout
+                        android:id="@+id/route_map_make_zoom_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/route_map_make_activity_map_button_zoom_out"
+                            android:layout_width="39dp"
+                            android:layout_height="46dp"
+                            android:contentDescription="@string/empty"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_map_zoom_out" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:background="#dddddd" />
+
+                        <ImageView
+                            android:id="@+id/route_map_make_activity_map_button_zoom_in"
+                            android:layout_width="39dp"
+                            android:layout_height="46dp"
+                            android:contentDescription="@string/empty"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_map_zoom_in" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/route_map_make_distance_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="17.5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@id/route_map_make_zoom"
+                    android:background="@drawable/route_map_make_distance_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/route_map_make_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/font_15" />
+
+                    <TextView
+                        android:id="@+id/route_map_make_activity_distance_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="bottom"
+                        android:text="@string/route_map_make_activity_distance_unit"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/font_12" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/route_map_make_plan_list_bg" />
+
+                <ImageView
+                    android:id="@+id/route_map_make_activity_elevation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/route_map_make_activity_map_button_location"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/route_map_make_activity_map_button_location"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_map_zoom_elevation"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/route_map_make_point_list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#383838">
+
+                    <TextView
+                        android:id="@+id/route_map_make_point_list_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="@string/route_map_make_activity_point_title"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/font_14" />
+
+                    <TextView
+                        android:id="@+id/route_map_make_point_list_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical"
+                        android:paddingRight="15dp"
+                        android:text="@string/route_map_make_activity_point_edit"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/font_14"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <com.beastbikes.android.modules.cycling.route.ui.widget.DragSortListView
+                    android:id="@+id/route_map_make_point_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:divider="#2f979797"
+                    android:dividerHeight="1px"
+                    android:footerDividersEnabled="true"
+                    android:listSelector="#00000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_weight="0"
+                    android:background="#2f979797" />
+
+                <TextView
+                    android:id="@+id/route_map_make_save_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="0"
+                    android:background="#89d437"
+                    android:gravity="center"
+                    android:text="@string/route_map_make_activity_save_points"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/font_14"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/route_map_make_upload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8f000000"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#333"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    style="@android:attr/progressBarStyleLarge"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="80dp"
+                    android:textColor="#fff"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/route_map_make_activity_saving" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

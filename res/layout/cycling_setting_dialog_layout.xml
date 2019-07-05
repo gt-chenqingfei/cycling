@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.beastbikes.android.widget.MaterialCheckBox
+        android:id="@+id/cycling_setting_dialog_item_check"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:background="@color/bg_theme_black_color" />
+
+    <TextView
+        android:id="@+id/cycling_setting_dialog_item_label"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_white_color"
+        android:textSize="@dimen/font_15" />
+
+</LinearLayout>

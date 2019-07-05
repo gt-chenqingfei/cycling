@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="preview">预览</string>
+    <string name="rong_cloud_back">返回</string>
+    <string name="rong_cloud_cancle">取消</string>
+    <string name="rong_cloud_send">发送</string>
+
+    <string name="back">Back</string>
+</resources>

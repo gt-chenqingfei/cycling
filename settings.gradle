@@ -1,0 +1,2 @@
+include ':com.beastbikes.framework.business', ':com.beastbikes.framework.persistence', ':com.beastbikes.framework.persistence.android', ':com.beastbikes.framework.persistence.android.ormlite', ':com.beastbikes.framework.ui.android', ':android-gpuimage', ':io.rongcloud.imkit.android', ':com.beastbikes.android.leancloud', ':com.beastbikes.framework.android', ':com.beastbikes.android.sphere', ':com.beastbikes.android.sharesdklibrary',  ':com.beastbikes.android.ble.protocol.parser', ':com.beastbikes.android.jpush'
+

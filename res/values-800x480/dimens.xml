@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="authentication_sign_in_fragment_button_margin">12dp</dimen>
+    <dimen name="cycling_number_text_view">55sp</dimen>
+    <dimen name="font_activity_cycling_speed_size">80sp</dimen>
+</resources>

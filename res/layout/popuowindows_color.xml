@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="100dp"
+    android:layout_height="30dp"
+    android:padding="8dp"
+    android:background="@drawable/color_popup_bg">
+    <com.beastbikes.android.modules.cycling.club.ui.widget.ColorCircleView
+        android:id="@+id/view_color_circle_red"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        app:circle_color="@color/view_color_circle_red" />
+
+    <com.beastbikes.android.modules.cycling.club.ui.widget.ColorCircleView
+        android:id="@+id/view_color_circle_orange"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        app:circle_color="@color/view_color_circle_orange" />
+
+    <com.beastbikes.android.modules.cycling.club.ui.widget.ColorCircleView
+        android:id="@+id/view_color_circle_green"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        app:circle_color="@color/view_color_circle_green" />
+
+    <com.beastbikes.android.modules.cycling.club.ui.widget.ColorCircleView
+        android:id="@+id/view_color_circle_blue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        app:circle_color="@color/view_color_circle_blue" />
+
+    <com.beastbikes.android.modules.cycling.club.ui.widget.ColorCircleView
+        android:id="@+id/view_color_circle_violet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        app:circle_color="@color/view_color_circle_violet" />
+
+    <com.beastbikes.android.modules.cycling.club.ui.widget.ColorCircleView
+        android:id="@+id/view_color_circle_black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        app:circle_color="@color/view_color_circle_black" />
+
+</LinearLayout>

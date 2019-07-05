@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/club_act_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/club_act_black"
+            android:text="@string/club_act_info_addroute"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/club_act_info_addroute_tv"
+            android:layout_toLeftOf="@+id/club_act_info_place_icon"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="5dp"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/club_act_black"/>
+        <ImageView
+            android:id="@+id/club_act_info_place_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="13dp"
+            android:layout_height="8dp"
+            android:scaleType="fitXY"
+            android:textSize="12sp"
+            android:rotation="90"
+            android:src="@drawable/club_release_act_more_setting_icon"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

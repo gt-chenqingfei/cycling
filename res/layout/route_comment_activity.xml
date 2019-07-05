@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.beastbikes.android.widget.PullRefreshListView
+            android:id="@+id/route_comment_activity_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#E0E0E0"
+            android:dividerHeight="0dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/route_comment_edittext_bg"
+            android:contentDescription="@string/empty"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <EditText
+            android:id="@+id/route_comment_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/route_comment_edit_text_selector"
+            android:hint="@string/route_comment_exit_hint"
+            android:maxLength="140"
+            android:paddingLeft="10dp"
+            android:textColor="#222"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/font_12" />
+
+        <Button
+            android:id="@+id/route_comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="0"
+            android:background="@drawable/route_send_comment_select"
+            android:text="@string/route_comment_send"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+</LinearLayout>

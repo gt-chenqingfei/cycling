@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item name="dialog_club_cancel_apply_warning" type="id" />
+    <item name="dialog_club_quit_warning" type="id" />
+    <item name="dialog_club_apply_again_warning" type="id" />
+    <item name="dialog_club_cancel_create_apply_warning" type="id" />
+    <item name="dialog_club_joined_warning" type="id" />
+    <item name="dialog_club_created_warning" type="id" />
+    <item name="dialog_club_integration_warning" type="id" />
+    <item name="dialog_friend_apply_clear" type="id" />
+    <item name="dialog_club_gallery_delete" type="id" />
+    <item name="dialog_club_gallery_count" type="id" />
+
+    <item name="nav_item_cycling" type="id" />
+    <item name="nav_item_ranking" type="id" />
+    <item name="nav_item_club" type="id" />
+    <item name="nav_item_railway" type="id" />
+    <item name="nav_item_activity" type="id" />
+    <item name="nav_item_route" type="id" />
+    <item name="nav_item_route_plan" type="id" />
+    <item name="nav_item_store" type="id" />
+    <item name="nav_item_more" type="id" />
+    <item name="nav_item_setting" type="id" />
+    <item name="club_write_infor_title" type="id" />
+
+    <!-- convenientbanner -->
+    <item name="cb_item_tag" type="id"></item>
+
+    <!-- share_popupwindow -->
+    <item name="share_item_facebook" type="id"></item>
+    <item name="share_item_twitter" type="id"></item>
+    <item name="share_item_wechat" type="id"></item>
+    <item name="share_item_wechat_moments" type="id"></item>
+    <item name="share_item_qq" type="id"></item>
+    <item name="share_item_weibo" type="id"></item>
+    <item name="share_item_sdcard" type="id"></item>
+</resources>

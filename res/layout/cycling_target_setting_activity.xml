@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:number="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_theme_black_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/cycling_target_setting_close"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_close_icon" />
+
+        <TextView
+            android:id="@+id/cycling_target_setting_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/user_setting_activity_action_button_save"
+            android:textColor="@color/text_white_color"
+            android:textSize="@dimen/font_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/cycling_target_set_target"
+            android:textColor="@color/text_white_color"
+            android:textSize="@dimen/font_20" />
+
+        <com.beastbikes.android.widget.NumberTextView
+            android:id="@+id/cycling_target_setting_target_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/text_white_color"
+            android:textSize="@dimen/font_80"
+            number:typefaceName="@string/number_type_face_name" />
+
+        <com.beastbikes.android.widget.NumberTextView
+            android:id="@+id/cycling_target_setting_target_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/activity_param_label_distance_unit"
+            android:textColor="@color/text_white_color"
+            android:textSize="@dimen/font_25"
+            number:typefaceName="@string/number_type_face_name" />
+
+        <ImageView
+            android:id="@+id/cycling_target_setting_select"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_arrow_drop_down" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cycling_target_config_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

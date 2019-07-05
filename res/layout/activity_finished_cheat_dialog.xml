@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_finished_activity_cheat_title"
+        android:textColor="#030303"
+        android:textSize="@dimen/font_18"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/activity_finished_activity_cheat_msg_title"
+        android:textColor="@color/text_white_color"
+        android:textSize="@dimen/font_14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="6dp"
+        android:drawableLeft="@drawable/activity_cheat_ordinal"
+        android:drawablePadding="6dp"
+        android:text="@string/activity_finished_activity_cheat_msg_0"
+        android:textColor="@color/text_white_color"
+        android:textSize="@dimen/font_14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="6dp"
+        android:drawableLeft="@drawable/activity_cheat_ordinal"
+        android:drawablePadding="6dp"
+        android:text="@string/activity_finished_activity_cheat_msg_1"
+        android:textColor="@color/text_white_color"
+        android:textSize="@dimen/font_14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="6dp"
+        android:drawableLeft="@drawable/activity_cheat_ordinal"
+        android:drawablePadding="6dp"
+        android:text="@string/activity_finished_activity_cheat_msg_2"
+        android:textColor="@color/text_white_color"
+        android:textSize="@dimen/font_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ddd"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/activity_finished_activity_cheat_iknow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/activity_finished_cheat_ikonw"
+            android:gravity="center"
+            android:text="@string/label_i_know"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_16" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#ddd"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/activity_finished_activity_complain_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/activity_finished_cheat_ikonw"
+            android:gravity="center"
+            android:text="@string/activity_finished_activity_complain"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#191919"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/nav_member"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawablePadding="-10dp"
+                android:drawableTop="@drawable/ic_clubfeed_members"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/activity_member_manager_member_label"
+                android:textColor="#6c6c6c"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/dot_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_oval"
+                android:textSize="@dimen/font_10"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/nav_group_chat"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawablePadding="-10dp"
+                android:drawableTop="@drawable/ic_clubfeed_chat"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/club_feed_group_chat"
+                android:textColor="#6c6c6c"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/dot_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_oval"
+                android:textSize="@dimen/font_10"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/nav_activity"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawablePadding="-10dp"
+                android:drawableTop="@drawable/ic_clubfeed_activity"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/club_info_task"
+                android:textColor="#6c6c6c"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/dot_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_oval"
+                android:textSize="@dimen/font_10"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/dot_activity_item_dot"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_oval"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_10"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/nav_scroe"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawablePadding="-10dp"
+                android:drawableTop="@drawable/ic_clubfeed_scroe"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/club_rank"
+                android:textColor="#6c6c6c"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/dot_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_oval"
+                android:textSize="@dimen/font_10"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/nav_more"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawablePadding="-10dp"
+                android:drawableTop="@drawable/ic_clubfeed_more"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/club_discover_group_more"
+                android:textColor="#6c6c6c"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/dot_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_oval"
+                android:textSize="@dimen/font_10"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/dot_more_item_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_oval"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_10"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tv_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#404040"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_warning" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:singleLine="true"
+            android:text="@string/activity_club_manager_title"
+            android:textColor="#999999" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_new_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_1b1b1b_btn"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="5dp"
+        android:text="@string/clubfeed_new_msg"
+        android:textColor="#dedede"
+        android:visibility="gone" />
+
+</LinearLayout>

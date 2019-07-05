@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/common_bg_color"
+    android:minHeight="56dp">
+
+    <com.beastbikes.framework.ui.android.widget.CircleImageView
+        android:id="@+id/club_member_list_item_avatar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_avatar"
+        app:borderWidth="0dp" />
+
+    <LinearLayout
+        android:id="@+id/club_member_list_item_rll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/member_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/club_member_list_item_btn_delete"
+            android:text=""
+            android:textColor="@color/member_managet_label"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/club_member_list_item_btn_delete"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6.5dp"
+            android:background="@drawable/shape_delete_member"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/club_member_list_item_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/club_member_list_item_avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/club_member_list_item_rll"
+        android:layout_toRightOf="@+id/club_member_list_item_avatar"
+        android:textColor="@color/member_manager_item_nickname"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/member_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/club_member_list_item_nickname"
+        android:layout_below="@id/club_member_list_item_nickname"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/club_member_list_item_rll"
+        android:textColor="@color/member_manager_item_time"
+        android:textSize="10sp" />
+
+
+    <View
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:background="@color/bg_border_line_color"/>
+
+    <View
+        android:id="@+id/bottomView_long"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_border_line_color"/>
+
+</RelativeLayout>

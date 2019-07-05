@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/common_bg_color"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_border_line_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <com.beastbikes.framework.ui.android.widget.CircleImageView
+                android:id="@+id/follow_search_result_item_avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/empty"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_avatar_club" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/follow_search_result_item_avatar"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/follow_search_result_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/text_white_color"
+                    android:textSize="@dimen/font_13" />
+
+                <TextView
+                    android:id="@+id/follow_search_result_item_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/font_11" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/follow_search_result_item_status"
+                android:layout_width="64dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/font_12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="18dp"
+                android:background="@color/bg_border_line_color" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/follow_search_result_item_club_name"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical|right"
+            android:singleLine="true"
+            android:text="@string/profile_club_empty"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/font_11" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:orientation="vertical">
+
+    <com.beastbikes.framework.ui.android.widget.CircleImageView
+        android:id="@+id/avater"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_avatar" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avater"
+        android:layout_toRightOf="@+id/avater"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cityname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nickname"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/avater"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/clubname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nickname"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/cityname"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/avater"
+        android:layout_toRightOf="@+id/avater"
+        android:text="203"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/distanceunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/avater"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/distance"
+        android:text="@string/club_info_total_distance_unit"
+        android:textColor="@color/member_manager_item_time"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0.5dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/avater"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/distanceunit"
+        android:background="@color/discover_color1"/>
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/avater"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/view"
+        android:text="203"
+        android:textColor="@color/tablayoutIndicatorColor"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rank_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/avater"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/view"
+        android:text="@string/label_unjoin_rank"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/rankunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/avater"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/rank"
+        android:text="@string/club_rank_rank_desc"
+        android:textColor="@color/member_manager_item_time"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/avater"
+        android:background="@color/bg_border_line_color"/>
+
+</RelativeLayout>

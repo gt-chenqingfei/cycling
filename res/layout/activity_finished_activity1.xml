@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <Button
+        android:id="@+id/activity_complete_activity_share"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#b2000000"
+        android:text="@string/club_browser_fenxiang_activity"
+        android:textColor="@color/designcolor_c7"
+        android:textSize="@dimen/font_17" />
+
+    <ScrollView
+        android:id="@+id/activity_complete_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activity_complete_activity_share"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#101010"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/activity_complete_map_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/activity_complete_cheat_prompt"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#d75050"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ic_activity_complete_cheat_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="17dp"
+                        android:contentDescription="@string/empty"
+                        android:src="@drawable/ic_activity_finish_cheat" />
+
+                    <ImageView
+                        android:id="@+id/ic_activity_complete_cheat_icon_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="6dp"
+                        android:contentDescription="@string/empty"
+                        android:src="@drawable/ic_activity_finished_cheat_right" />
+
+                    <TextView
+                        android:id="@+id/ic_activity_complete_cheat_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_toLeftOf="@+id/ic_activity_complete_cheat_icon_right"
+                        android:layout_toRightOf="@id/ic_activity_complete_cheat_icon"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/activity_finished_activity_cheat_title"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/font_12" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/activity_complete_activity_map_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.beastbikes.android.modules.map.SpeedxMap
+                        android:id="@+id/map_speedx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:id="@+id/activity_complete_activity_name_viewgroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/activity_complete_edit_name"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/activity_complete_activity_edit_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:contentDescription="@string/empty"
+                            android:src="@drawable/ic_activity_detail_edit" />
+
+                        <TextView
+                            android:id="@+id/activity_complete_activity_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/activity_record_detail_activity_midday_cycling"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/font_15" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="11dp"
+                        android:gravity="right">
+
+                        <LinearLayout
+                            android:id="@+id/activity_complete_activity_isprivate"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/activity_complete_edit_name"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/activity_complete_activity_isprivate_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@string/empty"
+                                android:src="@drawable/ic_route_private" />
+
+                            <TextView
+                                android:id="@+id/activity_complete_activity_isprivate_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/activity_complete_activity_isprivate"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/font_10" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/activity_complete_activity_report"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/activity_complete_edit_name"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/activity_complete_activity_report_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@string/empty"
+                                android:src="@drawable/ic_activity_complete_report_icon" />
+
+                            <TextView
+                                android:id="@+id/activity_complete_activity_report_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/activity_complete_activity_report"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/font_10" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/activity_complete_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_below="@+id/activity_complete_user_avatar"
+                    android:gravity="center"
+                    android:textColor="@color/text_white_color"
+                    android:textSize="@dimen/font_17" />
+
+                <LinearLayout
+                    android:id="@+id/datell1"
+                    android:layout_width="match_parent"
+                    android:layout_height="108dp"
+                    android:background="#101010"
+                    android:orientation="horizontal">
+
+
+                    <include
+                        android:id="@+id/distanceVG"
+                        layout="@layout/layout_date_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1" />
+
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#222222" />
+
+                    <include
+                        android:id="@+id/timeVG"
+                        layout="@layout/layout_date_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#222222" />
+
+                <LinearLayout
+                    android:id="@+id/datell2"
+                    android:layout_width="match_parent"
+                    android:layout_height="108dp"
+                    android:background="#101010"
+                    android:orientation="horizontal">
+
+
+                    <include
+                        android:id="@+id/maxSpeedVG"
+                        layout="@layout/layout_date_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1" />
+
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#222222" />
+
+                    <include
+                        android:id="@+id/avgSpeedVG"
+                        layout="@layout/layout_date_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#222222" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0">
+
+                    <Button
+                        android:id="@+id/activity_complete_record_segment_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#1a1a1a"
+                        android:gravity="center"
+                        android:minWidth="90dp"
+                        android:text="@string/record_segment"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/font_12" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/activity_complete_more_data_btn"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#1a1a1a"
+                        android:gravity="center"
+                        android:text="@string/cycling_data_title"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/font_12" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_complete_share_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#101010"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/speedverticalunit"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="left|bottom"
+                        android:paddingLeft="14dp"
+                        android:text="@string/activity_complete_activity_achart_velocity_label"
+                        android:textColor="#cccccc"
+                        android:textSize="@dimen/font_10" />
+
+                    <TextView
+                        android:id="@+id/elevationverticalunit"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right|bottom"
+                        android:paddingRight="10dp"
+                        android:text="@string/activity_complete_activity_achart_altitude_label"
+                        android:textColor="#cccccc"
+                        android:textSize="@dimen/font_10" />
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/activity_complete_activity_speed_load"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/activity_complete_activity_speed_load_error"
+                        android:textColor="#ccc"
+                        android:textSize="@dimen/font_12" />
+
+                    <LinearLayout
+                        android:id="@+id/activity_complete_activity_speed_achart"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:orientation="horizontal" />
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/speedhorizontalunit"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="right|top"
+                    android:paddingRight="10dp"
+                    android:text="@string/activity_finished_activity_distance_unit"
+                    android:textColor="#cccccc"
+                    android:textSize="@dimen/font_10" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/activity_finished_activity_zoom_out_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/activity_finish_map_zoom_out"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

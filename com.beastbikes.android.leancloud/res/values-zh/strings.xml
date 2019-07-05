@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="network_not_awesome">网络不给力</string>
+    <string name="server_error">服务器开小差了，请稍候</string>
+
+</resources>

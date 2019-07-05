@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beastbikes.android.modules.cycling.club.ui.widget.MyFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/club_feed_frag_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:orientation="vertical">
+
+    <com.beastbikes.android.widget.SwipeRefreshAndLoadLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.beastbikes.android.widget.stickylistlibrary.stickylistheaders.StickyListHeadersListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="@color/bg_border_line_color"
+            android:dividerHeight="1px"
+            android:drawSelectorOnTop="true"
+            android:paddingBottom="44dp" />
+
+    </com.beastbikes.android.widget.SwipeRefreshAndLoadLayout>
+
+    <FrameLayout
+        android:id="@+id/clubfeed_post_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/clubfeed_isprivate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="254dp"
+        android:background="@color/bg_black_color"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/clubfeed_join_club"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:text="@string/clubfeed_isprivate_tip"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/addclubrl"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="bottom"
+        android:background="@color/club_feed_info_add"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/joinclub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/addclub"
+            android:textColor="@color/squad_color2"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</com.beastbikes.android.modules.cycling.club.ui.widget.MyFrameLayout>

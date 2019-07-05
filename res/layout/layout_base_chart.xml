@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_line"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cycling_data_black_with_corners">
+
+    <RelativeLayout
+        android:id="@+id/rela_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/bg_with_right_top_and_bottom_corners">
+
+            <TextView
+                android:id="@+id/textView_cycling_data_left_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="120dp"
+                android:gravity="center"
+                android:text="Elevation"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:drawablePadding="5dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="12.5dp"
+                />
+
+        </LinearLayout>
+
+        <ViewStub
+            android:id="@+id/viewStub_chart_data_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout="@layout/layout_chart_data_source"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_temp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/rela_temp"
+        android:paddingLeft="15dp"
+        >
+
+        <ViewStub
+            android:id="@+id/viewStub_chart_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21.5dp"
+            android:layout="@layout/layout_chart_title"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ViewStub
+            android:id="@+id/layout_cycling_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="25dp"
+            android:layout="@layout/layout_cycling_chart_bottom" />
+
+        <ViewStub
+            android:id="@+id/layout_cycling_data1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="66dp"
+            android:layout_marginTop="50dp"
+            android:layout="@layout/layout_cycling_chart_bottom_two_item" />
+
+        <ViewStub
+            android:id="@+id/viewStub_slope_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp"
+            android:layout="@layout/layout_slope_bottom" />
+
+        <ViewStub
+            android:id="@+id/viewStub_heart_rate_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout="@layout/layout_heart_rate_bottom" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relative_temp"
+        android:layout_below="@id/linear_temp1"
+        >
+
+        <ViewStub
+            android:id="@+id/viewStub_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/layout_line_chart"
+            />
+
+        <ViewStub
+            android:id="@+id/viewStub_pie_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/layout_pie_chart"
+            />
+
+        <ViewStub
+            android:id="@+id/viewStub_bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/layout_bar_chart"
+            />
+
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/viewStub_chart_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_chart_no_relative_data"
+        />
+
+</RelativeLayout>

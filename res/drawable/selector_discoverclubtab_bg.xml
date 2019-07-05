@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        <solid android:color="#00ff00" android:state_selected="true" ></solid>
+        <solid android:color="#ffcc00" android:state_selected="false" ></solid>
+        -->
+        <item android:drawable="@color/club_rank_tab_bg_color" android:state_selected="true"></item>
+        <item android:drawable="@color/club_rank_title_bg"></item>
+
+</selector>

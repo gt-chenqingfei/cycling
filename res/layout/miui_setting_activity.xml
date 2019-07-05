@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#34343c"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/empty"
+                    android:src="@drawable/ic_actionbar_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/app_name"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/font_18"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                android:text="@string/miui_setting_title_desc"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/miui_setting_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/ic_setting_miui_close_icon" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/miui_setting_activity_desc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/miui_setting_desc_1"
+        android:textColor="#444"
+        android:textSize="@dimen/font_15" />
+
+    <ImageView
+        android:id="@+id/miui_setting_desc_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:contentDescription="@string/empty"
+        android:src="@drawable/ic_setting_miui_6_bg" />
+
+    <Button
+        android:id="@+id/miui_setting_go_open"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_orange_btn"
+        android:text="@string/miui_setting_go_open"
+        android:textColor="#fff"
+        android:textSize="@dimen/font_14" />
+
+</LinearLayout>

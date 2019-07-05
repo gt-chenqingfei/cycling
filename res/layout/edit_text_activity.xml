@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_black_color">
+
+    <EditText
+        android:id="@+id/edit_text_activity_value"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:background="@color/common_bg_color"
+        android:textColor="@color/clubinfosetting_label_color"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:maxEms="16"
+        android:maxLength="30"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/font_16" />
+
+</LinearLayout>

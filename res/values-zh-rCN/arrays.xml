@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="select_cadence_value">
+        <item>0x05</item>
+        <item>0x06</item>
+        <item>0x07</item>
+        <item>0x08</item>
+        <item>0x09</item>
+        <item>0xFF</item>
+    </integer-array>
+
+    <string-array name="select_cadence_array">
+        <item>(60~70 RPM)</item>
+        <item>(71~80 RPM)</item>
+        <item>(81~90 RPM)</item>
+        <item>(91~100 RPM)</item>
+        <item>(101~110 RPM)</item>
+        <item>@string/cadence_unuse</item>
+    </string-array>
+
+    <string-array name="select_cadence_title">
+        <item>R1</item>
+        <item>R2</item>
+        <item>R3</item>
+        <item>R4</item>
+        <item>R5</item>
+        <item>RX</item>
+    </string-array>
+
+    <string-array name="select_cadence_desc">
+        <item>@string/cadence_r1</item>
+        <item>@string/cadence_r2</item>
+        <item>@string/cadence_r3</item>
+        <item>@string/cadence_r4</item>
+        <item>@string/cadence_r5</item>
+        <item>@string/cadence_rx</item>
+    </string-array>
+
+</resources>

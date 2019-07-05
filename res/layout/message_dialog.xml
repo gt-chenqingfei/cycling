@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_club_apply_dialog_edit"
+        android:gravity="top|left"
+        android:hint="@string/club_dialog_input_hint"
+        android:maxLength="20"
+        android:minHeight="110dp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/font_12" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="4.5dp"
+        android:text="@string/club_dialog_hint"
+        android:textColor="#cc353535"
+        android:textSize="@dimen/font_11" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="17dp"
+            android:layout_weight="1"
+            android:background="@drawable/message_dialog_cancle_bg"
+            android:gravity="center"
+            android:text="@string/activity_alert_dialog_text_cancel"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_14" />
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_message_create_bg"
+            android:gravity="center"
+            android:text="@string/club_dialog_btn_sure"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+</LinearLayout>
